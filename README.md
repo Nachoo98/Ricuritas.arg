@@ -4,4 +4,4 @@ Proyecto Integrador- Grupo 7- Digital House
 Links de referencia:
 < https://www.schmaltzybros.com/ > 
 < https://pedidos.masdelivery.com/pinchos > 
-< ttps://www.mcdonalds.com.ar/ >
+< https://www.mcdonalds.com.ar/ >
