@@ -18,9 +18,9 @@ Nuestro objetivo es realizar una página tanto funcional como profesional para e
 ***
 ### Integrantes
 
-***-Daniel Alonso:*** Fotógrafo, Diseñador (Gráfico-Web). Hace 10 años con un trabajo horrible. Quiero entrar al mundo de la programación. Espero no sea tarde!
+***-Alonso Daniel:*** Fotógrafo, Diseñador (Gráfico-Web). Hace 10 años con un trabajo horrible. Quiero entrar al mundo de la programación. Espero no sea tarde!
 
-***-Gabriel Dueck:*** : Veterinario, recibido en la Universidad de Buenos Aires. Trabajando como clínico y cirujano de pequeños animales. 
+***-Dueck Gabriel:***  Veterinario, recibido en la Universidad de Buenos Aires. Trabajando como clínico y cirujano de pequeños animales. 
 Actualmente realizando curso de Desarrollador Full Stack Node, en Digital House. 
 
 ***-Gonzalez Ignacio:*** Estudiante de Ing. Biomédica, Técnico Mecánico, apasionado por la fotografía y con muchisimas ganas de insertarme en el mundo IT.
