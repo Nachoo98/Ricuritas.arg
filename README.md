@@ -25,6 +25,7 @@ Actualmente realizando curso de Desarrollador Full Stack Node, en Digital House.
 
 ***-Gonzalez Ignacio:*** Estudiante de Ing. Biomédica, Técnico Mecánico, apasionado por la fotografía y con muchisimas ganas de insertarme en el mundo IT.
 
+***-Oballos Jazmin:*** Abogada, ejercí 10 años mi profesión, pero siempre tuve muchas ganas de entrar en el mundo de la programación, por eso me decidí y acá estoy aprendiendo cada día para dar lo mejor de mí.
 ***
 ### Tablero
 
