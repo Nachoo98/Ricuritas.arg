@@ -1,8 +1,10 @@
-# Ricuritas.arg
+<h1 align="center"> Ricuritas.arg</h1>
 
-![ricuritas](https://trello-logos.s3.amazonaws.com/dcf35bcf44703186f5168e2b4f7da026/170.png)
+<p align="center">
+  <img width="150" src="https://trello-logos.s3.amazonaws.com/dcf35bcf44703186f5168e2b4f7da026/170.png" alt="Ricuritas logo">
+</p>
 
-Proyecto Integrador- Grupo 7- Digital House
+<h2 align="center"> Proyecto Integrador- Grupo 7- Digital House</h2>
 
 ### Temática y descripción del sitio:
 
