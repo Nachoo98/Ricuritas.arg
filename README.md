@@ -6,7 +6,7 @@ Proyecto Integrador- Grupo 7- Digital House
 
 ### Temática y descripción del sitio:
 
-Página de comida (Ricuritas.ar) encargada de administrar pedidos y envíos referente al emprendimiento de Jazmín Oballos integrante del grupo.
+Página de comida (Ricuritas.arg) encargada de administrar pedidos y envíos referente al emprendimiento de Jazmín Oballos integrante del grupo.
 ***
 ### Objetivo:
 
