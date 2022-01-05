@@ -1,9 +1,8 @@
 <h1 align="center"> Ricuritas.arg</h1>
 
 <p align="center">
-  <img width="150" src="https://trello-logos.s3.amazonaws.com/dcf35bcf44703186f5168e2b4f7da026/170.png" alt="Ricuritas logo">
+  <img width="150" src="https://user-images.githubusercontent.com/96180832/148280389-8e2d855f-2a7f-4067-a549-daedf9abcd09.png" alt="Ricuritas logo">
 </p>
-
 <h2 align="center"> Proyecto Integrador- Grupo 7- Digital House</h2>
 
 ### Temática y descripción del sitio:
