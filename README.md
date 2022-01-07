@@ -7,7 +7,7 @@
 
 ### Temática y descripción del sitio:
 
-Página de comida (Ricuritas.arg) encargada de administrar pedidos y envíos referente al emprendimiento de Jazmín Oballos integrante del grupo.
+Página de comida encargada de administrar pedidos y envíos referente al emprendimiento de Jazmín Oballos integrante del grupo.
 ***
 ### Objetivo:
 
