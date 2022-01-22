@@ -1,0 +1,30 @@
+header{
+    background-color:#FFF0C9;
+    
+}
+
+.logo{
+    width: 15%;
+    height: 15%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    align-items: flex-end;
+    margin-left: -5%;
+}
+
+.botones{
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+}
