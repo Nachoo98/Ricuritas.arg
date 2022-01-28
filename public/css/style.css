@@ -28,3 +28,141 @@ header{
     text-decoration: none;
     color: black;
 }
+
+/* Estilos producto.html*/
+.cajaMadre{
+  display: flex;
+  justify-content: space-between;
+}
+
+#caja1{
+  font-family: sans-serif;
+  margin: auto;
+  background-color: white;
+  max-width: 800px;
+  width: 50%;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+#caja1 > ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#caja1 > ul.slider{
+  position: relative;
+  width: 50%;
+  height: 100px;
+}
+
+#caja1 > ul.slider li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: 70%;
+  height: 70%;
+  transition: opacity .5s;
+  background:#fff;
+}
+
+#caja1 > ul.slider li img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+#caja1 > ul.slider li:first-child {
+  opacity: 1; 
+}
+
+#caja1 > ul.slider li:target {
+  opacity: 1; 
+}
+
+#caja1 > .menu{
+  text-align: left;
+  margin: 20px;
+}
+
+#caja1 > .menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+#caja1 > .menu li img{
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  padding: 2px;
+  width: 50px;
+  height: 50px;
+}
+
+#caja1> article{
+  width: 50%;
+}
+
+#caja2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  }
+
+.seleccion{
+  display: flex;
+  flex-direction: column;
+  margin:20px
+  }
+
+@media(min-width:480px){
+
+#caja1 > ul.slider {
+  height: 200px;
+}
+
+#caja1 > ul.slider li img{
+  width: 200px;
+  height: 200px;
+}
+
+#caja1 > .menu li img{
+  width: 50px;
+  height: 50px;
+}
+
+}
+
+@media(min-width:720px){
+#caja1{
+  margin-left:80px;
+}
+
+#caja1 > ul.slider {
+  height: 300px;
+}
+
+#caja1 > ul.slider li img{
+  width: 300px;
+  height: 300px;
+}
+
+#caja1 > .menu li img{
+  width: 80px;
+  height: 80px;
+}
+
+}
+
+@media (min-width:980px){
+
+#caja1{
+  margin-left:200px;
+}
+
+}

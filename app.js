@@ -14,4 +14,10 @@ app.get('/home',(req,res)=>{
     res.sendFile(path.join(__dirname,'views/home.html'));
 })
 
-app.listen(3015,);
+app.get('/producto',(req,res)=>{
+    res.sendFile(path.join(__dirname,'views/producto.html'));
+})
+
+app.listen(3015, ()=>{
+    console.log("Servidor corriendo")
+});
