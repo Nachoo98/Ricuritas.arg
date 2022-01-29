@@ -1,7 +1,17 @@
 header{
-    background-color:#FFF0C9;
-    
+  background-color:#595959;
+    padding-bottom: 1%;
+    color: white
 }
+
+body{
+  font-family: 'Dongle', sans-serif;
+  font-weight: 300;
+  background-color: #dedede;
+
+}
+
+
 
 .logo{
     width: 15%;
@@ -17,6 +27,7 @@ header{
     margin-left: -5%;
 }
 
+
 .botones{
     width: 20%;
     height: 20%;
@@ -26,7 +37,7 @@ header{
 
 .nav a{
     text-decoration: none;
-    color: black;
+    color: #dedede;
 }
 
 /* Estilos producto.html*/
@@ -173,6 +184,7 @@ margin: 5%;
 .nacho_botones button{
   background-color:blueviolet;
   color: #fff;
+  border-radius: 5px; 
 }
 .nacho_total{
   width: 1000px;
@@ -201,6 +213,7 @@ margin: 5%;
 
 .mainlogin2{
   background-color: rgb(228, 222, 222);
+  margin-bottom: 2%;
 }
 
 .mainlogin{
@@ -232,9 +245,10 @@ margin: 5%;
 }
 
 .footerlogin{
-  background-color:rgb(228, 222, 222);
+  background-color:#595959;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: #dedede;
   
 }
 
@@ -250,13 +264,13 @@ margin: 5%;
   list-style: none;
   flex-direction: column;
 
- 
+
 
 }
 
 .navfooter a{
   text-decoration: none;
-  color: black;
+  color:#dedede;
   margin-left: 5%;
 
 }
@@ -308,11 +322,12 @@ margin: 5%;
 .registro-jaz{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 2%;
   width: 30%;
   height: 70%;
   padding: 1em;
   border: 1px solid rgb(192, 190, 190);
+align-items: center;
 }
 
 .logo-jaz{
