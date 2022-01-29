@@ -207,8 +207,8 @@ margin: 5%;
 }
 
 .logologin{
-  width: 10%;
-  height: 10%;
+  width: 12%;
+  height: 12%;
 }
 
 .mainlogin2{
@@ -240,8 +240,8 @@ margin: 5%;
 }
 
 #botonlogin{
-  background-color:rgb(228, 222, 222) ;
-  color:black;
+  background-color:rgb(228, 166, 50) ;
+  color: white;
 }
 
 .footerlogin{
@@ -276,12 +276,17 @@ margin: 5%;
 }
 
 .whatsapp{
-   color: green;
-   font-size: 180%;
+   color:green;
+   font-size: 200%;
    margin-left: -4%;
    position: fixed;
    left: 10%;
    bottom: 5%;
+  
+}
+
+.fondowp{
+  background-color: white;
 }
 
 .iconos{
@@ -317,79 +322,6 @@ margin: 5%;
 
 
 /* ----------------------------------------------------------------------------------------------- */
-
-/*Estilos Registro*/
-.registro-jaz{
-  display: flex;
-  flex-direction: column;
-  margin: 2%;
-  width: 30%;
-  height: 70%;
-  padding: 1em;
-  border: 1px solid rgb(192, 190, 190);
-align-items: center;
-}
-
-.logo-jaz{
-  width:40%;
-  text-align: center;
-}
-
-.jazmin{
-  list-style: none;
-  text-align: center;
-}
-
-.jazmin li + li{
-  margin-top: 1em;
-}
-
-#email, #password, #celular, #direction{
-  width: 200px;
-  height: 25px;
-  border: 1px solid rgb(211, 208, 208);
-}
-
-#number, #piso{
-  width:70px;
-  height: 25px;
-  border: 1px solid rgb(211, 208, 208);
-}
-
-#notas{
-  width: 200px;
-  height: 50px;
-  border: 1px solid rgb(211, 208, 208);
-}
-
-.p-jaz {
-  font-size: 12px;
-  width: 150px;
-  display: inline-block;
-  margin-left: 16px;
-}
-a.button-jaz {
-  font-size: 14px;
-  font-weight: 600;
-  color: white;
-  padding: 6px 30px 0px 20px;
-  margin: 10px 8px 20px 0px;
-  display: inline-block;
-  text-decoration: none;
-  width: 50px;
-  height: 28px; 
-  border-radius: 5px; 
-  background-color: #3a57af; 
-  transition: all 0.1s linear 0s; 
-  top: 0px;
-  position: relative;
-}
-
-a.button:hover {
-  background-color:white;
-  color: blue;
-    }
-
     
 
 /* ----------------------------------------------------------------------------------------------- */

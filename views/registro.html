@@ -9,38 +9,48 @@
     <script src="https://kit.fontawesome.com/68e050386e.js" crossorigin="anonymous"></script>
 </head>
 <body> 
+    <header class="headerlogin">
+        <nav>
+            <img class="logologin" src="imag/logo.png">
+            <ul class="navlogin">         
+                <li><a href="#"> Menu</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Dónde estamos</a></li>
+                <li><i class="fas fa-shopping-cart" ></i></li>
+            <div class="botones">
+                <button>Iniciar sesión</button>
+                <br>
+                <button>Registrarse</button>
+            </div>
 
-<main class="registro-jaz">
-    <form action="/" method="POST">
-        <ul class= jazmin>
-            <li>
-                <img class="logo-jaz" src="imag/logo.png">
-            </li>
-            <li>
-                <input type="email" id="email" name="email" placeholder="Email">
-            </li>    
-            <li>
-                <input type="password" id="password" name="password" placeholder="Contraseña">
-            </li>
-            <li>
-                <input type="text" id="celular" name="celular" placeholder="Nro. celular">
-            </li>
-            <li>
-                <input type="text" id="direction" name="direction" placeholder="Calle" >
-            </li>
-            <li>
-                <input type="text" id="number" name="number" placeholder="Nro."> <input type="text" id="piso" name="piso" placeholder="Piso">
-            </li>
-            <li>
-                <input type="text" id="notas" name="notas" placeholder="Notas (opcional)">
-            </li>
-            <li>
-                 <p class="p-jaz">Dando click en Registrarse, aceptas nuestros <a href="#">términos y condiciones</a>.</p>
-                <a href="#" class="button-jaz">Registrarse</a>
-            </li>
-        </ul>
-    </form>  
-</main>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="mainlogin2" >
+        <div class="mainlogin">
+        <div>
+            <h4>¡Hola! Creá tu cuenta</h4>
+        </div>
+        <form action="/login-usuario" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre y Apellido"><br><br><br>
+            <input type="email" id="email" name="email" placeholder="Email"><br><br><br>
+            <input type="text" name="usuario" placeholder="Nombre de usuari@"><br><br><br>
+            <input type="password" name="pass" placeholder="Contraseña">
+            <span class="eyeboton" ><i class="far fa-eye-slash"></i></span> <br><br><br>
+            <input type="password" name="pass" placeholder="Confirmar contraseña">
+            <span class="eyeboton" ><i class="far fa-eye-slash"></i></span> <br><br><br>
+            <input type="text" name="celular" placeholder="Nro. Teléfono"><br><br><br>
+            <input type="text" name="direction" placeholder="Dirección"><br><br><br>
+            <input type="text" name="notas" placeholder="Notas(opcional)"><br><br><br>
+            <input id="botonlogin" class="submit-form" type="submit" value="Registrarse"><br><br>
+            <h6>Dando click en Registrarse,aceptas nuestros <a href="#">Términos y condiciones</a></h6><br><br>
+        </form>
+        </div>
+    </main>
+
+
 <footer class="footerlogin">
     <div class="footerlogin2">
         <nav>
