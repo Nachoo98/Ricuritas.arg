@@ -18,6 +18,10 @@ app.get('/producto',(req,res)=>{
     res.sendFile(path.join(__dirname,'views/producto.html'));
 })
 
+app.get('/carrito',(req,res)=>{
+    res.sendFile(path.join(__dirname,'views/carrito.html'));
+})
+
 app.listen(3015, ()=>{
     console.log("Servidor corriendo")
 });
