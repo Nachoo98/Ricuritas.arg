@@ -7,7 +7,7 @@ app.use(express.static(publicPath))
 
 
 app.get('/',(req,res)=>{
-    res.send("Bienvenidos");
+    res.sendFile(path.join(__dirname,'views/home.html'));
 })
 
 app.get('/home',(req,res)=>{
