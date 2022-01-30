@@ -147,44 +147,50 @@ body{
 /* ------------------------------------------------------------------------------------- */
 .nacho_contenedor{
   width: 100%;
-  height: 600px;
+  padding:1%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 }
+.nacho_productos{
+  width: 80%;
+}
 .nacho_subproducto{
   border-bottom: solid 2px red;
-  width: 1000px;
+  width: 100%;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .nacho_izquierda{
- 
+
   width: 50%;
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .nacho_derecha{
-  
-  width: 40%;
+  width: 45%;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+ 
 }
 .nacho_derecha button{
-  width: 25%;
-  height: 15%;
-  background-color:blueviolet;
-  color: #fff;
+  background-color:rgb(228, 166, 50);
+  color: black;
 }
 .nacho_foto{
 width: 95px;
-height: 95px;
+height: 95px;;
 margin: 5%;
+display: flex;
+
 }
 .nacho_botones{
   width: 60%;
@@ -193,19 +199,20 @@ margin: 5%;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+
 }
 .nacho_botones button{
-  background-color:blueviolet;
-  color: #fff;
-  border-radius: 5px; 
+  background-color:rgb(228, 166, 50);
+  color: black;
 }
 .nacho_total{
-  width: 1000px;
+  width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
+
+
 
 /* ------------------------------------------------------------------------------------- */
 /*Login-footer*/
@@ -360,6 +367,26 @@ margin: 5%;
 #caja1 > .menu li img{
   width: 50px;
   height: 50px;
+}
+.nacho_contenedor{
+  width: 100%;
+
+}
+.nacho_productos{
+  width: 90%;
+}
+
+.nacho_izquierda{
+  width: 40%;
+}
+.nacho_derecha{
+  width: 40%;
+}
+.nacho_botones{
+  width: 95%;
+}
+.nacho_total{
+  width: 90%;
 }
 
 }
