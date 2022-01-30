@@ -183,7 +183,10 @@ body{
 }
 .nacho_derecha button{
   background-color:rgb(228, 166, 50);
-  color: black;
+  color: white;
+  border-radius: 5px;
+  border:rgb(190, 190, 166);
+  padding: 10px;
 }
 .nacho_foto{
 width: 95px;
@@ -202,8 +205,11 @@ display: flex;
 
 }
 .nacho_botones button{
-  background-color:rgb(228, 166, 50);
-  color: black;
+  background-color:rgb(228, 166, 50) ;
+  color: white;
+  border-radius: 5px;
+  border:rgb(190, 190, 166);
+  padding: 10px;
 }
 .nacho_total{
   width: 60%;
