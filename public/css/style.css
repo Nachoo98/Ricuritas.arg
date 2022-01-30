@@ -92,8 +92,7 @@ body{
 }
 
 #caja1 > ul.slider li img{
-  width: 100px;
-  height: 100px;
+  width: 262%;
   object-fit: cover;
 }
 
@@ -133,7 +132,7 @@ body{
   }
 
 #caja2 form input{
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
     border: rgb(190, 190, 166);
     padding: 10px;
@@ -365,10 +364,6 @@ display: flex;
   height: 200px;
 }
 
-#caja1 > ul.slider li img{
-  width: 200px;
-  height: 200px;
-}
 
 #caja1 > .menu li img{
   width: 50px;
@@ -405,11 +400,6 @@ display: flex;
   height: 300px;
 }
 
-#caja1 > ul.slider li img{
-  width: 300px;
-  height: 300px;
-}
-
 #caja1 > .menu li img{
   width: 80px;
   height: 80px;
@@ -420,7 +410,20 @@ display: flex;
 @media (min-width:980px){
 
 #caja1{
-  margin-left:200px;
+  margin-left:auto;
+}
+
+#caja1 > ul.slider li img{
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+}
+
+
+#caja1 > .menu li img{
+  width: 80px;
+  height: 80px;
+  margin-left: 25px;
 }
 
 }
