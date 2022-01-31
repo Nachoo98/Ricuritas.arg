@@ -1,3 +1,5 @@
+*{box-sizing: border-box;}
+
 header{
   background-color:#595959;
     padding-bottom: 1%;
@@ -18,30 +20,33 @@ body{
 }
 
 .logo{
-    width: 15%;
+    width: 30%;
     height: 15%;
+    align-self: center;
     
 }
 
 .nav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    align-items: flex-end;
-    margin-left: -5%;
+    padding: 0px;
+}
+
+.nave{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 
-
-
 .botones{
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .nav a{
@@ -53,8 +58,8 @@ body{
 -------------------------------------------------------------------------------------------------------------------*/
 .cajaMadre{
   display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 #caja1{
@@ -71,8 +76,11 @@ body{
 
 #caja1 > ul, li {
   padding: 0;
-  margin: 0;
-  list-style: none;
+    margin: auto;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #caja1 > ul.slider{
@@ -95,7 +103,7 @@ body{
 #caja1 > ul.slider li img{
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit:cover;
   margin:auto
 }
 
@@ -381,6 +389,13 @@ display: flex;
   height: 200px;
 }
 
+.cajaMadre{
+  flex-direction: row;
+}
+
+#caja1 > ul.slider li img{
+  object-fit: contain;
+  }
 
 #caja1 > .menu li img{
   width: 50px;
@@ -407,6 +422,9 @@ display: flex;
   width: 90%;
 }
 
+
+
+
 }
 @media(min-width:720px){
 
@@ -417,6 +435,22 @@ display: flex;
 #caja1 > .menu li img{
   width: 80px;
   height: 80px;
+}
+
+.logo{
+  width: 15%;
+  height: 15%;
+}
+
+.botones{
+  width: 43%;
+  max-width: 300px;
+}
+
+.nav{
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
 }
 
 }
