@@ -249,8 +249,10 @@ display: flex;
 
 
 .logologin{
-  width: 12%;
-  height: 12%;
+  width: 10%;
+  height: 10%;
+  padding-top: 3%;
+ 
 }
 
 .mainlogin2{
@@ -335,16 +337,29 @@ display: flex;
 .whatsapp{
    color:green;
    font-size: 200%;
-   margin-left: -4%;
+   margin-right: -8%;
    position: fixed;
-   left: 10%;
+   right: 10%;
    bottom: 5%;
+   width: 55px;
+   height: 55px;
+   line-height: 55px;
+   bottom: 30px;
+  background-color:#0df053 ;
+  color: #fff;
+  border-radius: 50px;
+  text-align:center;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index: 100;
   
 }
 
-.fondowp{
-  background-color: white;
+.whatsapp:hover{
+  text-decoration: none;
+  color:#0df053;
+  background-color: #fff;
 }
+
 
 .iconos{
  display: flex;
@@ -355,7 +370,7 @@ display: flex;
  align-items: center;
 }
 
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 720px)
 { 
     .mainlogin{
     margin: -4rem auto 0;
@@ -376,7 +391,12 @@ display: flex;
 }
 
 }
-
+ @media(max-width:719px){
+   .logologin{
+     width: 20%;
+     height: 20%;
+   }
+ }
 
 /* ----------------------------------------------------------------------------------------------- */
     
