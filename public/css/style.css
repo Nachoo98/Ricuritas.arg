@@ -442,9 +442,6 @@ display: flex;
   width: 90%;
 }
 
-
-
-
 }
 @media(min-width:720px){
 
@@ -472,7 +469,6 @@ display: flex;
   justify-content: space-around;
   align-items: end;
 }
-
 }
 
 @media (min-width:980px){
@@ -488,3 +484,35 @@ display: flex;
 }
 
 }
+
+/*estilos home*/
+.portada{
+  align-items: center;
+  padding-inline-start: 200px;
+   width: 50%;
+   padding-top: 30px;
+ }
+ .texto{
+  align-items: center;
+   width: 50%;
+   padding-inline-end: 200px;
+   padding-top: 30px;
+ }
+ .contenedor{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+ }
+ .fotos{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding-top: 50px;
+ }
+ .contenedor2{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding-top: 50px;
+ }
+ 
