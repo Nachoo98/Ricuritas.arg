@@ -41,7 +41,7 @@ body{
 }
 
 
-.botones{
+.botones a{
     width: 100%;
     height: 100%;
     display: flex;
@@ -471,13 +471,12 @@ display: flex;
   justify-content: space-around;
   align-items: end;
 }
-.contenedor p b{
-   font-size:720%;
- }
+
 .nacho_botones button{
  width: 20%;
  height: 10%;
 }
+
 }
 
 @media (min-width:980px){
@@ -491,13 +490,12 @@ display: flex;
   width: 80px;
   height: 80px;
 }
-.contenedor p b{
-  font-size: medium;
-}
+
 .nacho_botones button{
   width: 20%;
   height: 10%;
  }
+
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -511,16 +509,17 @@ display: flex;
  }
  .contenedor p{
   align-items: center;
-   width: 50%;
-   height: 10%;
+   width: 45%;
+   height: auto;
    margin-top: 3%;
    margin-left: -35%;
+   font-size: medium;
  }
  .contenedor p b{
-  font-size: small;
+  font-size: 12px;
  }
  .contenedor img{
-   padding-bottom: 3%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   width: 55%;
   height: 55%;
  }
@@ -529,22 +528,25 @@ display: flex;
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
+   padding-bottom: 3%;
    border-bottom: solid 2px #595959;
  }
  .fotos{
    width: 70%;
    display:flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    flex-direction: row;
    flex-wrap: wrap;
-
+   
    margin: auto;
+   padding-bottom: 1%;
  }
 
  .fotos img{
    object-fit: cover;
    width: 25%;
    height: auto;
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
  }
  .contenedorfotos{
    width:100%;
