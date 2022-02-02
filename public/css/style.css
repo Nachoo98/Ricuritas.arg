@@ -391,6 +391,11 @@ display: flex;
 .footerlogin{
     border-top: 1px solid rgb(212, 209, 209);
 }
+#cajaLogo{
+  justify-content: flex-start;
+  
+
+}
 
 }
  @media(max-width:719px){
