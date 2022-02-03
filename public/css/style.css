@@ -251,10 +251,7 @@ display: flex;
 
 
 .logologin{
-  width: 10%;
-  height: 10%;
-  padding-top: 3%;
- 
+  width: 7rem;
 }
 
 .mainlogin2{
@@ -265,10 +262,13 @@ display: flex;
 .mainlogin{
   text-align: center;
   background-color: beige;
-  padding-top:25px;
+  padding-top: 25px;
   padding-bottom: 25px;
   display: flex;
   flex-direction: column;
+  margin: auto;
+  border-radius: 3%;
+  max-width: 30rem;
 }
 
 .mainlogin input{
@@ -375,35 +375,14 @@ display: flex;
 @media only screen and (min-width: 720px)
 { 
     .mainlogin{
-    margin: -4rem auto 0;
-    margin-top: -4rem;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    max-width: 26rem;
-    padding: 2rem 4rem;
-    padding-top: 2rem;
-    padding-right: 4rem;
-    padding-bottom: 2rem;
-    padding-left: 4rem;
-    border-radius: 20px;
+    margin:auto;
 }
 .footerlogin{
     border-top: 1px solid rgb(212, 209, 209);
 }
-#cajaLogo{
-  justify-content: flex-start;
-  
 
 }
 
-}
- @media(max-width:719px){
-   .logologin{
-     width: 20%;
-     height: 20%;
-   }
- }
 
 /* ----------------------------------------------------------------------------------------------- */
     
@@ -589,4 +568,3 @@ flex-grow: 0.6;
 
  }
 
- 
