@@ -23,7 +23,9 @@ body{
     width: 30%;
     height: 15%;
     align-self: center;
-    
+    margin-left: 1%;
+    margin-top: 1%;
+ 
 }
 
 .nav{
@@ -508,9 +510,7 @@ display: flex;
   
  }
 
- #carouselExampleControls{
-  height: 60%;
- }
+ 
  .fotos{
    width: 70%;
    display:flex;
