@@ -38,6 +38,8 @@ body{
   display: flex;
   justify-content: inherit;
   width: 100%;
+  padding-bottom: 5%; /* gabi: agregue el padding bottom*/
+  
 }
 
 
@@ -53,6 +55,15 @@ body{
     text-decoration: none;
     color: #dedede;
 }
+
+@media(max-width:719px){
+  .botones{
+    display: flex;
+    flex-direction: row;
+  }
+}
+/* gabi :agregue el ultimo @media completo*/
+
 
 /* Estilos producto.html-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
@@ -428,9 +439,9 @@ display: flex;
 
 
 .logo{
-  width: 15%;
-  height: 15%;
-}
+  width: 12%;
+  height: 12%;
+} /* gabi: baje de 15 a 12 % ambos*/
 
 .botones{
   width: 43%;
