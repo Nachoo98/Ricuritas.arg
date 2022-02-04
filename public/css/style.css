@@ -456,7 +456,12 @@ display: flex;
   width: 20%;
   height: 10%;
  }
-
+ .nav{
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+  flex-wrap: nowrap;
+}
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -485,12 +490,15 @@ display: flex;
   height: 55%;
  }
  .contenedor{
-   display:flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
+ 
    padding-bottom: 3%;
    border-bottom: solid 2px #595959;
+  height: 20%;
+  
+ }
+
+ #carouselExampleControls{
+  height: 60%;
  }
  .fotos{
    width: 70%;
