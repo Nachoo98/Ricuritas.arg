@@ -23,13 +23,13 @@ body{
   justify-content:center;
 }
 
-.logo{
-    width: 30%;
-    height: 15%;
-    align-self: center;
-    margin-left: 1%;
-    margin-top: 1%;
- 
+.cajaLogo{
+  max-width: 135px;
+  margin-left: 1%;
+}
+
+a .logo {
+    width: 100%;
 }
 
 .nav{
