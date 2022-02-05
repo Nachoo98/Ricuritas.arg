@@ -13,6 +13,10 @@ body{
   margin:0px;
 
 }
+.nav_carrito{
+  border: solid 1px #595959;
+  margin-top: 0%;
+}
 
 #cajaLogo{
   display: flex;
@@ -221,18 +225,22 @@ margin: 5%;
 display: flex;
 
 }
-.nacho_botones{
-  width: 60%;
-  height: 10%;
+
+.nacho_botones a{
+padding: 1%;
+}
+ .nacho_botones{
+
   display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
 
 }
 .nacho_botones button{
   background-color:rgb(228, 166, 50) ;
   color: #595959;
+  width: 100%;
   border-radius: 5px;
   border:rgb(190, 190, 166);
   padding: 10px;
@@ -260,7 +268,10 @@ display: flex;
   display: none;
 }
 
+#cajaLogo{
+  margin-top: 2%;
 
+}
 
 .logologin{
   width: 7rem;
@@ -426,7 +437,9 @@ display: flex;
   width: 40%;
 }
 .nacho_botones{
-  width: 95%;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .nacho_total{
   width: 90%;
@@ -456,24 +469,26 @@ display: flex;
   align-items: end;
 }
 
-.nacho_botones button{
- width: 20%;
- height: 10%;
+.nacho_botones{
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 }
 
 @media (min-width:980px){
-  
-.nacho_botones button{
-  width: 20%;
-  height: 10%;
- }
+
  .nav{
   flex-direction: row;
   justify-content: space-around;
   align-items: end;
   flex-wrap: nowrap;
+}
+.nacho_botones{
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
 }
 }
 
