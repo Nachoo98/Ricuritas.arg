@@ -1,5 +1,6 @@
 const pageRoutes=require('./src/routes/pageRoutes')
 const usersRoutes=require('./src/routes/usersRoutes')
+const productosRoutes=require('./src/routes/productosRoutes')
 
 const express=require('express');
 const path=require('path');
@@ -11,6 +12,9 @@ app.use(express.static(publicPath))
 app.use('/', pageRoutes);
 
 app.use('/', usersRoutes);
+
+app.use('/', productosRoutes);
+
 
 
 app.set('view engine', 'ejs')

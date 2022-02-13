@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('../partials/head')%>
+<body>
+    <%-include('../partials/header')%>
+    <main>
+        <form action="/edicion_producto" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre de Producto"><br><br><br>
+            <input type="number" name="precio" placeholder="Precio"> 
+            <input type="number" name="unidades" placeholder="Unidades"> 
+          
+            <input id="botonlogin" class="submit-form" type="submit" value="Editar"><br><br><br>
+            <input id="botonlogin" class="submit-form" type="reset" value="Borrar"><br><br>
+        </form>
+    </main>
+    <%-include('../partials/footer')%>
+</body>
+</html>
