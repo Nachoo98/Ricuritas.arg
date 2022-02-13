@@ -1,4 +1,11 @@
-### Retrospectiva
+### Retrospectiva (Sprint 3)
+
+-Hacemos una llamada para realizar el Sprint 3 en conjunto por la cantidad de consignas.
+
+-Actualizamos el tablero de Trello con los nuevos objetivos.
+
+***
+### Retrospectiva (Sprint 2)
 
 
 -Hacemos una llamada para coordinar y organizarnos con el Sprint.
