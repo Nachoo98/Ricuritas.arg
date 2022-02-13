@@ -1,4 +1,5 @@
 const pageRoutes=require('./src/routes/pageRoutes')
+const usersRoutes=require('./src/routes/usersRoutes')
 
 const express=require('express');
 const path=require('path');
@@ -9,13 +10,8 @@ app.use(express.static(publicPath))
 
 app.use('/', pageRoutes);
 
-app.get('/registro',(req,res)=>{
-    res.sendFile(path.join(__dirname,'views/registro.html'));
-})
+app.use('/', usersRoutes);
 
-app.get('/login',(req,res)=>{
-    res.sendFile(path.join(__dirname,'views/login.html'));
-})
 
 app.set('view engine', 'ejs')
 
