@@ -30,6 +30,8 @@ app.get('/login',(req,res)=>{
     res.sendFile(path.join(__dirname,'views/login.html'));
 })
 
+app.set('view engine', 'ejs')
+
 app.listen(process.env.PORT || 3015, ()=>{
     console.log("Servidor corriendo");
 });
