@@ -1,37 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ricuritas.arg</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"> 
-    <script src="https://kit.fontawesome.com/68e050386e.js" crossorigin="anonymous"></script>
-</head>
+  <%-include('./partials/head')%>
 <body>
-  <header>    
-    <nav class="nav_carrito">
-        
-      <ul class="nav">
-          <a href="home" class="cajaLogo">
-            <img class="logo" src="imag/logo.png">
-          </a>  
-        <div class="nave">   
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="carrito">Mi carrito</a></li>
-            <li><a href="#">Menu</a></li>
-        </div>
-        <div class="nave2">
-            <li><a href="#">Delivery</a></li>
-            <li><a href="login">Ingresá</a></li>
-            <li><a href="registro">Registrate</a></li>
-        </div>
-      </ul>
-    </nav>
-</header>
+  <%-include('./partials/header')%>
+
     <main>
      <div class="cajaMadre">
         <div id="caja1">
@@ -103,23 +75,6 @@
           </div>
     </div>
     </main>
-    <footer class="footerlogin">
-      <div class="footerlogin2">
-          <nav>
-              <ul class="navfooter" >
-                  <li><a href="#"> Menu</a></li><br>
-                  <li><a href="#">Delivery</a></li><br>
-                  <li><span class="whatsapp" ><i class="fab fa-whatsapp"></i></span><a href="#">Contactanos</a></li>
-                                     
-              </ul>
-          </nav>
-          <div class="iconos">
-              <div><i class="fab fa-instagram"></i></div>
-              <div><i class="fab fa-facebook"></i> </div> 
-              <div><i class="fab fa-twitter"></i></div>
-              <div><i class="fab fa-tiktok"></i></div>
-          </div>
-      </div>       
-  </footer>  
+    <%-include('./partials/footer')%>
 </body>
 </html>
