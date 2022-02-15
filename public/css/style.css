@@ -583,3 +583,17 @@ flex-grow: 0.6;
 
  }
 
+/*-------------------------------------------------------------------------------------------*/
+/* estilos creacion - edicion productos*/
+.description{
+  border-radius: 6px;
+  border: none;
+  min-height: 150px;
+  min-width: 75% ;
+  
+}
+
+.crearEditarLabel{
+  display: block;
+ 
+}

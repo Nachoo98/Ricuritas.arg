@@ -3,17 +3,41 @@
     <%-include('../partials/head')%>
 <body>
     <%-include('../partials/header')%>
-    <main>
-        <form>
+    <br>
+    <main class="mainlogin2">
+        <div class="mainlogin">
+            <div>
+                 <h5>Formulario de creación de productos</h5>
+            </div>
+            <br>
             <form action="/creacion_producto" method="POST">
-                <input type="text" name="nombre" placeholder="Nombre de Producto"><br><br><br>
-                <input type="number" name="precio" placeholder="Precio"> 
-                <input type="number" name="unidades" placeholder="Unidades"> 
-              
-                <input id="botonlogin" class="submit-form" type="submit" value="Crear"><br><br><br>
-                <input id="botonlogin" class="submit-form" type="reset" value="Borrar"><br><br>
+                <div >
+					<div >
+						<label for="name" class="crearEditarLabel" >Nombre del producto:</label>
+						<input type="text" id="name" name="name" placeholder="Ej: Oreo Fritas" >
+					</div>
+                    <br>
+					<div >
+						<label for="price" class="crearEditarLabel">Precio del producto:</label>
+						<input type="text" id="price" name="price" placeholder="Ej:$ 500" >
+					</div>
+                    <br>
+                    <div >
+						<label for="Unidades" class="crearEditarLabel">Unidades:</label>
+						<input type="number" id="number" name="Unidades" placeholder="" >
+					</div>
+                    <br>
+					<div>
+						<label for="description" class="crearEditarLabel">Descipción:</label>
+						<textarea name="description" id="description" class="description" ></textarea>
+					</div>
+                    <br>
+					<div >
+						<button id="botonlogin" type="submit" class="submit-form">Guardar producto</button>
+					</div>
+				</div>
             </form>
-        </form>
+        </div>
     </main>
     <%-include('../partials/footer')%>
 </body>
