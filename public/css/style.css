@@ -46,20 +46,22 @@ a .logo {
   display: flex;
   justify-content: inherit;
   width: 100%;
-  padding-bottom: 5%; /* gabi: agregue el padding bottom*/
+  padding-bottom: 3%; /* gabi: agregue el padding bottom*/
 }
 
 .nave2{
   display: flex;
   justify-content: inherit;
   width: 100%;
-  padding-bottom: 5%; /* gabi: agregue el padding bottom*/
+  padding-bottom: 3%; /* gabi: agregue el padding bottom*/
 }
 
-.nave a{
+.nave a {
   text-decoration: none;
   color: white;
   border-radius: 3px;
+  padding:10px;
+  border: solid 1px #595959;
   transition: all 0.1s;
 }
 
@@ -67,6 +69,8 @@ a .logo {
   text-decoration: none;
   color: white;
   border-radius: 3px;
+  padding:10px;
+  border: solid 1px #595959;
   transition: all 0.1s;
 }
 
@@ -74,13 +78,11 @@ a .logo {
 border:solid 1px  black ;
 background-color: #cf4400;
 color:black;
-padding: 10px;
 }
 .nave2 a:hover{
   border:solid 1px  black ;
   background-color: #cf4400;
   color:black;
-  padding: 10px;
   }
 /* Estilos producto.html-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
