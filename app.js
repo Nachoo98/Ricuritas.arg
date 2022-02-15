@@ -11,9 +11,9 @@ app.use(express.static(publicPath))
 
 app.use('/', pageRoutes);
 
-app.use('/usuarios', usersRoutes);
+app.use('/', usersRoutes);
 
-app.use('/productos', productosRoutes);
+app.use('/', productosRoutes);
 
 
 
