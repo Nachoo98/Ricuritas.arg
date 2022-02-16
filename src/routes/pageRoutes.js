@@ -5,7 +5,6 @@ const express=require('express');
 const router=express.Router();
 
 router.get('/home', pageControllers.home)
-router.get('/', pageControllers.home)
 router.get('/carrito', pageControllers.carrito)
 router.get('/producto', pageControllers.producto)
 
