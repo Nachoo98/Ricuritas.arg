@@ -14,9 +14,40 @@ const productosControllers={
     crear:(req,res)=>{
         res.render('products/creacion_producto');
     },
+
     editar:(req,res)=>{
-        res.render('products/edicion_producto');
+        let  idProductoSeleccionado = req.params.id;
+		let productoEncontrado=null;
+
+		for (let p of products){
+			if (p.id==idProductoSeleccionado){
+				productoEncontrado=p;
+				break;
+			}
+		}
+
+		res.render("products/edicion_producto",{producto: productoEncontrado});
+       
     },
+    editado:(req,res)=>{
+        
+            let productoModificado = req.body;
+            let productoId=req.params.id;
+            let productos = products;
+    
+            for(let p of productos){
+                if(p.id==productoId){
+                    p.nombre=productoModificado.nombre;
+                    p.price=productoModificado.price;
+                    p.description=productoModificado.description;
+                    break
+                }
+            }
+        
+            fs.writeFileSync(productsFilePath, JSON.stringify(productos , null , ' '));
+            res.redirect('/productos');
+    },
+    
     detail:(req,res)=>{
         res.render('products/producto');
     },
@@ -36,6 +67,27 @@ const productosControllers={
         productos.push(nuevoProducto);
         fs.writeFileSync(productsFilePath, JSON.stringify(productos,null,' '));
         res.redirect('/productos');
+    },
+    destroy:(req,res)=>{
+      
+            let idProductoSeleccionado = req.params.id;
+            let productoEncontrado=null;
+    
+            for (let p of products){
+                if (p.id==idProductoSeleccionado){
+                    productoEncontrado=p;
+                    break;
+                }
+            }
+    
+            let productos2 = products.filter(function(e){
+                return e.id!=productoEncontrado.id;
+            })
+    
+            fs.writeFileSync(productsFilePath, JSON.stringify(productos2,null,' '));
+    
+            res.redirect('/productos');
+        
     },
 
 }
