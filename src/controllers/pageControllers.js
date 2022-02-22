@@ -4,10 +4,7 @@ const pageControllers={
     },
     carrito:(req,res)=>{
         res.render('carrito');
-    },
-    producto:(req,res)=>{
-        res.render('producto');
-    },
+    }
 }
 
 module.exports=pageControllers;
