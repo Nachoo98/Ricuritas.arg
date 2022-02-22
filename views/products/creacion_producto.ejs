@@ -9,11 +9,11 @@
                  <h5>Formulario de creación de productos</h5>
             </div>
             <br>
-            <form action="/creacion_producto" method="POST">
+            <form action="/productos/creado" method="POST">
                 <div >
 					<div >
 						<label for="name" class="crearEditarLabel" >Nombre del producto:</label>
-						<input type="text" id="name" name="name" placeholder="Ej: Oreo Fritas" >
+						<input type="text" id="name" name="nombre" placeholder="Ej: Oreo Fritas" >
 					</div>
                     <br>
 					<div >
@@ -21,11 +21,7 @@
 						<input type="text" id="price" name="price" placeholder="Ej:$ 600" >
 					</div>
                     <br>
-                    <div >
-						<label for="Unidades" class="crearEditarLabel">Unidades:</label>
-						<input type="number" id="number" name="Unidades" placeholder="" >
-					</div>
-                    <br>
+
 					<div>
 						<label for="description" class="crearEditarLabel">Descipción:</label>
 						<textarea name="description" id="description" class="description" ></textarea>

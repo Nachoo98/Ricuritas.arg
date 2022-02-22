@@ -9,7 +9,7 @@
                  <h5>Formulario de edición de productos</h5>
             </div>
             <br>
-            <form action="/edicion_producto" method="POST">
+            <form action="/productos/editar/<%=producto.id%>?_method=PUT" method="POST">
                 <div >
 					<div >
 						<label for="name" class="crearEditarLabel" >Nombre del producto:</label>
