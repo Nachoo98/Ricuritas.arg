@@ -53,6 +53,8 @@ const productosControllers={
     },
     creado:(req,res)=>{
         let productos = products;
+        
+        let nombreImagen=req.file.filename;
 
 		let idNuevo = productos[productos.length-1].id + 1;
 
@@ -61,7 +63,7 @@ const productosControllers={
 			nombre: req.body.nombre,
 			price: req.body.price,
 			description: req.body.description,
-			imagen: "https://robohash.org/rationeeumet.png?size=50x50&set=set1",
+			imagen: nombreImagen,
 		};
 
         productos.push(nuevoProducto);
@@ -83,8 +85,11 @@ const productosControllers={
             let productos2 = products.filter(function(e){
                 return e.id!=productoEncontrado.id;
             })
-    
+
+
+            fs.unlinkSync(path.join(__dirname, '../../public/imag', productoEncontrado.imagen));
             fs.writeFileSync(productsFilePath, JSON.stringify(productos2,null,' '));
+           
     
             res.redirect('/productos');
         

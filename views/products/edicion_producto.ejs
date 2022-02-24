@@ -23,14 +23,15 @@
                     <br>
 
 					<div>
-						<label for="description" class="crearEditarLabel">Descipción:</label>
-						<input name="description" id="description" class="description" value="<%=producto.description%>"></input>
+						<label for="description" class="crearEditarLabel">Descripción:</label>
+						<textarea name="description" id="description" class="description" placeholder="<%=producto.description%>"></textarea>
 					</div>
                     <br>
 					<div>
 						<button id="botonlogin" type="submit" class="submit-form">Guardar edición</button>
 					</div>
 				</div>
+                <br>
             </form>
             <form action="/productos/editar/<%=producto.id%>?_method=DELETE" method="POST">
             <div>

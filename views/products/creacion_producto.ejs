@@ -9,7 +9,7 @@
                  <h5>Formulario de creación de productos</h5>
             </div>
             <br>
-            <form action="/productos/creado" method="POST">
+            <form action="/productos/creado" method="POST" enctype="multipart/form-data" >
                 <div >
 					<div >
 						<label for="name" class="crearEditarLabel" >Nombre del producto:</label>
@@ -21,9 +21,14 @@
 						<input type="text" id="price" name="price" placeholder="Ej:$ 600" >
 					</div>
                     <br>
-
+                    <div class="subirImagen">
+						<label>Seleccione una Imagen:</label>
+                        <br>
+						<input type="file" name="imagenProducto"/>
+					</div>
+                    <br>
 					<div>
-						<label for="description" class="crearEditarLabel">Descipción:</label>
+						<label for="description" class="crearEditarLabel">Descripción:</label>
 						<textarea name="description" id="description" class="description" ></textarea>
 					</div>
                     <br>
