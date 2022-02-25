@@ -49,7 +49,16 @@ const productosControllers={
     },
     
     detail:(req,res)=>{
-        res.render('products/producto');
+        let  idProductoSeleccionado = req.params.id;
+		let productoEncontrado=null;
+
+		for (let p of products){
+			if (p.id==idProductoSeleccionado){
+				productoEncontrado=p;
+				break;
+			}
+		}
+        res.render('products/producto',{producto: productoEncontrado});
     },
     creado:(req,res)=>{
         let productos = products;

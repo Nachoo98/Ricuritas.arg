@@ -9,7 +9,7 @@
         <div id="caja1">
             <ul class="slider">
               <li id="slide1">
-                <img src="/imag/empanadas.png"/>
+                <img src="/imag/<%= producto.imagen%>"/>
               </li>
               <li id="slide2">
                 <img src="/imag/empanadas1.png"/>
@@ -21,7 +21,7 @@
             
             <ul class="menu">
               <li>
-                <a href="#slide1"><img src="/imag/empanadas.png"/></a>
+                <a href="#slide1"><img src="/imag/<%= producto.imagen%>"/></a>
               </li>
               <li>
                 <a href="#slide2"><img src="/imag/empanadas1.png"/></a>
@@ -30,14 +30,14 @@
                 <a href="#slide3"><img src="/imag/picada.png"/></a>
               </li>
             </ul>
-            <h3>Descripcion</h3>
-            <article>Plato típico de la Cordillera de los Andes Venezolano, que tiene como base una masa de harina de trigo casera y se rellena de infinidades de sabores como queso, carne o pollo y pueden ser fritos u horneados.</article>
+            <h3>Descripción</h3>
+            <article><%= producto.description%></article>
             
           </div>
 
           <div id="caja2">
-            <h2>Pastelitos Andinos</h2>
-            <h3>$100,00</h3>
+            <h2><%= producto.nombre%></h2>
+            <h3>$<%= producto.price%></h3>
             <p><input type="checkbox" name="Extra1" value="Extra1">Extra1</p>
             <p><input type="checkbox" name="Extra2" value="Extra2">Extra2</p>
             <p><input type="checkbox" name="Extra3" value="Extra3">Extra3</p>
