@@ -1,65 +1,65 @@
 [
  {
   "id": 1,
-  "nombre": "Sauce - Bernaise, Mix",
-  "description": "Salsa Bernaise mix",
-  "price": "$4.48",
+  "nombre": "Tequeños",
+  "description": "Deliciosos palitos de queso venezolano cubiertos de masa de harina de trigo",
+  "price": "$800",
   "imagen": "https://robohash.org/velabtempore.png?size=50x50&set=set1"
  },
  {
   "id": 2,
-  "nombre": "Chocolate - Dark",
-  "description": "eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien",
-  "price": "$0.89",
+  "nombre": "Pastelitos Andinos",
+  "description": "Masa de harina de trigo casera rellena de infinidades de sabores como queso, carne o pollo y pueden ser fritos u horneados",
+  "price": "$1.000",
   "imagen": "https://robohash.org/eoscumnulla.png?size=50x50&set=set1"
  },
  {
   "id": 3,
-  "nombre": "Squash - Butternut",
-  "description": "dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent",
-  "price": "$5.31",
+  "nombre": "Arepas",
+  "description": " Torta de harina de maíz precocida de forma circular y semi-aplanada que se cocina asada o frita",
+  "price": "$600",
   "imagen": "https://robohash.org/rationeeumet.png?size=50x50&set=set1"
  },
  {
   "id": 4,
-  "nombre": "Cheese - St. Paulin",
-  "description": "sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis",
-  "price": "$9.85",
+  "nombre": "Empanadas venezolanas",
+  "description": "Fina mas de harina de maiz rellena ccon una preparación salada y cocida al horno o frita",
+  "price": "$250",
   "imagen": "https://robohash.org/isteculpaet.png?size=50x50&set=set1"
  },
  {
   "id": 5,
-  "nombre": "Beans - Black Bean, Dry",
-  "description": "luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui",
-  "price": "$0.06",
+  "nombre": "Hallaca",
+  "description": "Plato envuelto en hojas de platano que consiste en una masa de harina de maiz saborizado y rellena con guiso de carne, pollo y cerdo",
+  "price": "$600",
   "imagen": "https://robohash.org/sedofficiavero.png?size=50x50&set=set1"
  },
  {
   "id": 6,
-  "nombre": "Aspic - Amber",
-  "description": "proin at turpis a pede posuere nonummy integer non velit donec",
-  "price": "$1.51",
+  "nombre": "Tres Leches",
+  "description": " Suave bizcocho mojado con leche condensada, leche evaporada y crema de leche y cubierto de merengue",
+  "price": "$350",
   "imagen": "https://robohash.org/etoptioperferendis.png?size=50x50&set=set1"
  },
  {
   "id": 7,
-  "nombre": "Coffee Decaf Colombian",
-  "description": "habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut",
-  "price": "$1.07",
+  "nombre": "Oreos fritas",
+  "description": "Oreos cubiertas de masa de panqueque y fritas",
+  "price": "$400",
   "imagen": "https://robohash.org/inciduntquiaut.png?size=50x50&set=set1"
  },
  {
   "id": 8,
-  "nombre": "Beef - Short Loin",
-  "description": "tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse",
-  "price": "$0.68",
+  "nombre": "Aguapanela",
+  "description": "Bebida refrescante a base de agua de papelón y limón",
+  "price": "$150",
   "imagen": "https://robohash.org/totamblanditiisharum.png?size=50x50&set=set1"
  },
  {
   "id": 9,
-  "nombre": "Bread - Burger",
-  "description": "odio curabitur convallis duis consequat dui nec nisi volutpat eleifend",
-  "price": "$9.04",
+  "nombre": "Chicha",
+  "description": "Bebida fría a base de arroz y leche condensada",
+  "price": "$200",
   "imagen": "https://robohash.org/placeatperferendissapiente.png?size=50x50&set=set1"
  },
  {

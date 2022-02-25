@@ -604,3 +604,28 @@ flex-grow: 0.6;
 .subirImagen{
 
 }
+
+.inputfile {
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+  font-size: medium;
+  font-weight: 600;
+  color: white;
+  background-color: #949191;
+  display: inline-block;
+  border-radius: 3px;
+
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: rgb(228, 166, 50);
+}
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
