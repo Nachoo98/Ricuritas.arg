@@ -6,10 +6,22 @@
 
     <main>
 
-      <% for(let p of productos) {%>
-            <p><%= p.id%></p>
-            <p><%= p.nombre%></p>
-    <% }%>
+        <div>
+          <ul  >
+            <% for(let p of productos) {%>
+                   <a href="../productos/detail/<%=p.id%>" class="linkListado"> <li class="contenedorListado" >
+                                   <img class="fotoListado" src="/imag/<%= p.imagen%>">
+                                   <div class="detalleListado">
+                                    <h4><%= p.nombre%></h4>
+                                    <p><%= p.description%></p>
+                                    <p>$ <%= p.price%></p>
+                                  </div>
+                      </li>
+                    </a>
+             <% }%>
+          </ul>
+
+ 
 
     </main>
 

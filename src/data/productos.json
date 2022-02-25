@@ -3,91 +3,70 @@
   "id": 1,
   "nombre": "Tequeños",
   "description": "Deliciosos palitos de queso venezolano cubiertos de masa de harina de trigo",
-  "price": "$800",
-  "imagen": "https://robohash.org/velabtempore.png?size=50x50&set=set1"
+  "price": "800",
+  "imagen": "tequeños.png"
  },
  {
   "id": 2,
   "nombre": "Pastelitos Andinos",
   "description": "Masa de harina de trigo casera rellena de infinidades de sabores como queso, carne o pollo y pueden ser fritos u horneados",
-  "price": "$1.000",
-  "imagen": "https://robohash.org/eoscumnulla.png?size=50x50&set=set1"
+  "price": "1.000",
+  "imagen": "Pastelitos_3.png"
  },
  {
   "id": 3,
   "nombre": "Arepas",
   "description": " Torta de harina de maíz precocida de forma circular y semi-aplanada que se cocina asada o frita",
-  "price": "$600",
-  "imagen": "https://robohash.org/rationeeumet.png?size=50x50&set=set1"
+  "price": "600",
+  "imagen": "arepas_3.jpg"
  },
  {
   "id": 4,
   "nombre": "Empanadas venezolanas",
   "description": "Fina mas de harina de maiz rellena ccon una preparación salada y cocida al horno o frita",
-  "price": "$250",
-  "imagen": "https://robohash.org/isteculpaet.png?size=50x50&set=set1"
+  "price": "250",
+  "imagen": "arepas2.png"
  },
  {
   "id": 5,
   "nombre": "Hallaca",
   "description": "Plato envuelto en hojas de platano que consiste en una masa de harina de maiz saborizado y rellena con guiso de carne, pollo y cerdo",
-  "price": "$600",
-  "imagen": "https://robohash.org/sedofficiavero.png?size=50x50&set=set1"
+  "price": "600",
+  "imagen": "hallacas.jpg"
  },
  {
   "id": 6,
   "nombre": "Tres Leches",
   "description": " Suave bizcocho mojado con leche condensada, leche evaporada y crema de leche y cubierto de merengue",
-  "price": "$350",
-  "imagen": "https://robohash.org/etoptioperferendis.png?size=50x50&set=set1"
+  "price": "350",
+  "imagen": "tresLeches.jpg"
  },
  {
   "id": 7,
   "nombre": "Oreos fritas",
   "description": "Oreos cubiertas de masa de panqueque y fritas",
-  "price": "$400",
-  "imagen": "https://robohash.org/inciduntquiaut.png?size=50x50&set=set1"
+  "price": "400",
+  "imagen": "oreofritas.png"
  },
  {
   "id": 8,
   "nombre": "Aguapanela",
   "description": "Bebida refrescante a base de agua de papelón y limón",
-  "price": "$150",
-  "imagen": "https://robohash.org/totamblanditiisharum.png?size=50x50&set=set1"
+  "price": "150",
+  "imagen": "Aguapanela.jpg"
  },
  {
   "id": 9,
   "nombre": "Chicha",
   "description": "Bebida fría a base de arroz y leche condensada",
-  "price": "$200",
-  "imagen": "https://robohash.org/placeatperferendissapiente.png?size=50x50&set=set1"
+  "price": "200",
+  "imagen": "chicha.jpg"
  },
  {
   "id": 10,
-  "nombre": "Cheese - Oka",
+  "nombre": "Picada",
   "description": "in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula",
-  "price": "$9.38",
-  "imagen": "https://robohash.org/cupiditateautrepudiandae.png?size=50x50&set=set1"
- },
- {
-  "id": 11,
-  "nombre": "Torta 3 Leches",
-  "price": "450",
-  "description": "xd",
-  "imagen": "https://robohash.org/rationeeumet.png?size=50x50&set=set1"
- },
- {
-  "id": 13,
-  "nombre": "Mango",
-  "price": "200",
-  "description": "Fruta Tropical",
-  "imagen": "https://robohash.org/rationeeumet.png?size=50x50&set=set1"
- },
- {
-  "id": 14,
-  "nombre": "Naranja Dulce",
-  "price": "150",
-  "description": "Jugo de Naranja",
-  "imagen": "https://robohash.org/rationeeumet.png?size=50x50&set=set1"
+  "price": "9.38",
+  "imagen": "picada1.png"
  }
 ]
