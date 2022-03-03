@@ -93,23 +93,35 @@ a .logo {
   height: 0vh;
   top:100px;
   text-align: end;
+  transition: all .5s;
 }
 
 .navMenu li{
  display: none;
+  background-color: black;
+ line-height: 30px;
+
+ transition: all .5s;
 }
-/* .navMenu li a{
- 
-} */
+.navMenu li a{
+ color: blue;
+ font-size: 16px;
+ text-transform: uppercase;
+ font-weight: 600;
+} 
+.navMenu li a .active, .navMenu li a:hover{
+  color: #cf4400;
+  transition:.3s;
+}
 #check{
-  display:none;
+display: none;
 }
 #check:checked ~ navMenu{
 height: 100vh;
 }
 
 #check:checked ~ navMenu li{
- display: block;
+display: block;
   }
 /*-------------------------*/
 .nave a:hover{

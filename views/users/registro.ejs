@@ -9,7 +9,7 @@
         <div>
             <h4>¡Hola! Creá tu cuenta</h4>
         </div>
-        <form action="/login-usuario" method="POST">
+        <form action="/usuarios/registrado" method="POST" enctype="multipart/form-data">
             <input type="text" name="nombre" placeholder="Nombre"><br><br><br>
             <input type="text" name="apellido" placeholder="Apellido"><br><br><br>
             <input type="email" id="email" name="email" placeholder="Email"><br><br><br>
@@ -19,7 +19,13 @@
             <input type="password" name="password" placeholder="Confirmar contraseña">
             <span class="eyeboton" ><i class="far fa-eye-slash"></i></span> <br><br><br>
             <input type="tel" name="telefono" placeholder="Nro. Teléfono"><br><br><br>
-            <input type="text" name="direction" placeholder="Dirección"><br><br><br>
+            <input type="text" name="direction" placeholder="Dirección"><br><br>
+            <div class="subirImagen">
+                <label>Subir Imágen:</label>
+                <br>
+                <input type="file" name="imagenUsuario" id="file" class="inputfile" />
+                <label for="file">Seleccionar Imágen</label>
+            </div><br>
             <input type="text" name="notas" placeholder="Notas(opcional)"><br><br><br>
             <input id="botonlogin" class="submit-form" type="submit" value="Registrarse"><br><br>
             <h6>Dando click en Registrarse,aceptas nuestros <a href="#">Términos y condiciones</a></h6><br><br>
