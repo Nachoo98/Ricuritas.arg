@@ -1,7 +1,10 @@
+
 const bcrypt = require('bcryptjs');
 
-const encriptada=function (contraseña) {
-    let passEncriptada = bcrypt.hashSync('micontraseña',10);
+function passMiddleware(req,res,next) {
+    var passEncriptada = bcrypt.hashSync(req.body.password,10);
+
+    next();
 }
 
-module.exports=encriptada;
+module.exports=passMiddleware;

@@ -19,15 +19,13 @@ const usersControllers={
 
 		let idNuevo = usuarios[usuarios.length-1].id + 1;
 
-        let passEncriptada = bcrypt.hashSync('req.body.password',10);//Modificar
-
       let nuevoUsuario = {
 			id: idNuevo,
 			nombre: req.body.nombre,
 			apellido: req.body.apellido,
             email:req.body.email,
             usuario: req.body.usuario,
-            password: passEncriptada,
+            password: bcrypt.hashSync(req.body.password,10),
             telefono: req.body.telefono,
             direction: req.body.direction,
             notas: req.body.notas,

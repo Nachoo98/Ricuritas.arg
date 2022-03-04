@@ -118,20 +118,5 @@
   "direction": "12048 Sycamore Junction",
   "notas": "ac leo pellentesque ultrices mattis odio donec vitae nisi nam",
   "imagen": "https://robohash.org/istesintdolorem.png?size=50x50&set=set1"
- },
- {
-  "id": 11,
-  "nombre": "xd",
-  "apellido": "lol",
-  "email": "xdxd@gmail.com",
-  "usuario": "superxd",
-  "password": [
-   "12345678",
-   "12345678"
-  ],
-  "telefono": "1122334455",
-  "direction": "CalleFalsa123",
-  "notas": "Timbre 1",
-  "imagen": "1646273488439.jfif"
  }
 ]
