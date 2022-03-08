@@ -130,14 +130,16 @@ a .logo {
 .menuDesplegable {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 200px;
+  background-color: #595959;
+  min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  right:2%;
+  top:67px;
 }
 
 .menuDesplegable a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -149,11 +151,11 @@ a .logo {
 
 .menuDesplegable a:hover {background-color: #f1f1f1}
 
-.menuDesplegable1:hover .menuDesplegable {
+.menuBarra1:hover .menuDesplegable {
   display: block;
 }
 
-.menuDesplegable1:hover .menuBarra1 {
+.menuBarra1:hover .menuBarra1 {
   background-color:  #636963;
 }
 
