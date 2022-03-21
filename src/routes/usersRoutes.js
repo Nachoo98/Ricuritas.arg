@@ -25,6 +25,6 @@ const uploadFile = multer({ storage: multerDiskStorage });
 router.get('/registro', usersControllers.registro)
 router.post('/registrado',uploadFile.single('imagenUsuario'), usersControllers.registrado)
 router.get('/login', usersControllers.login)
-
+router.post('/logins',usersControllers.logeando)
 
 module.exports=router;

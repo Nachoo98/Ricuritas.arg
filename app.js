@@ -2,6 +2,7 @@
 const pageRoutes=require('./src/routes/pageRoutes')
 const usersRoutes=require('./src/routes/usersRoutes')
 const productosRoutes=require('./src/routes/productosRoutes')
+const session=require('express-session')
 const methodOverride = require('method-override');
 
 const express=require('express');
@@ -14,6 +15,12 @@ app.use(express.static(publicPath))
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+app.use(session({
+    secret:"Esto es un secreto",
+    resave:false,
+    saveUninitialized:false,
+}))
 
 app.use('/', pageRoutes);
 
@@ -28,3 +35,10 @@ app.set('view engine', 'ejs')
 app.listen(process.env.PORT || 3015, ()=>{
     console.log("Servidor corriendo");
 });
+
+//--------------------SPRINT 5-------------------------
+//errores => Usuario,Contraseña,Creado.
+//Crear vista de usuario
+//rutas => Crear producto (para no ingresar por url)
+//Validar paso a paso registro.
+//-----------------------------------------------------

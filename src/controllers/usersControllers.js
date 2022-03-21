@@ -37,6 +37,27 @@ const usersControllers={
         res.redirect('/home');
     
     },
+    logeando:(req,res)=>{
+        
+    let usuarios=users;
+    let cont=1;
+    for (let i=0;i<usuarios.length;i++)
+    {
+        cont++;
+        if(usuarios[i].usuario==req.body.usuario){
+        
+            let passwordOk=bcrypt.compareSync(req.body.password,usuarios[i].password)
+            
+            if(passwordOk){
+                res.redirect('/home');
+            }else{
+                res.send("ERROR DE CONTRASEÑA"); //cartelito error contraseña
+            }
+        }else if(cont>usuarios.length){
+            res.send("ERROR DE USUARIO");//cartelito error usuario
+        }
+    }
+    },
 
 }
 

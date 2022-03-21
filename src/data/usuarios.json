@@ -118,5 +118,29 @@
   "direction": "12048 Sycamore Junction",
   "notas": "ac leo pellentesque ultrices mattis odio donec vitae nisi nam",
   "imagen": "https://robohash.org/istesintdolorem.png?size=50x50&set=set1"
+ },
+ {
+  "id": 11,
+  "nombre": "Raul",
+  "apellido": "Gimenez",
+  "email": "raul@gmail.com",
+  "usuario": "Raul24",
+  "password": "$2a$10$OlPn1qyIiEdUTJjrFbN6uO0fDGcxGRcoeh7PieYzQEWiKxgxcpv0u",
+  "telefono": "1523344556",
+  "direction": "Calle falsa 123",
+  "notas": "Depto",
+  "imagen": "1647899633763.webp"
+ },
+ {
+  "id": 12,
+  "nombre": "pedro",
+  "apellido": "estaben",
+  "email": "cd@gmail.com",
+  "usuario": "pedrito",
+  "password": "$2a$10$KXt16uyrRXmbpkfazFt3ge/BioGwN2N5D8HDcGA8Zp22o5odemBca",
+  "telefono": "1122334455",
+  "direction": "Callefalsa123",
+  "notas": "Timbre 1",
+  "imagen": "1647903206048.webp"
  }
 ]
