@@ -142,5 +142,17 @@
   "direction": "Callefalsa123",
   "notas": "Timbre 1",
   "imagen": "1647903206048.webp"
+ },
+ {
+  "id": 13,
+  "nombre": "Pepe",
+  "apellido": "Gomez",
+  "email": "pepe@gmail.com",
+  "usuario": "pepito",
+  "password": "$2a$10$JMonNfkSg6NE46yrqaWfnumf.dPQkh4HnDmwKDAb/BxvvYyIRNpla",
+  "telefono": "1122334455",
+  "direction": "Callefalsa123",
+  "notas": "Timbre 1",
+  "imagen": "1648086594936.png"
  }
 ]

@@ -11,6 +11,9 @@
         </div>
         <form action="/usuarios/logins" method="POST">
             <input type="text" name="usuario" placeholder="Nombre de usuari@"><br><br><br>
+            <% if(locals.errors && errors.usuario) {%>
+                    <span><%= errors.usuario.msg%> </span>
+            <% }%>
             <input type="password" name="password" placeholder="Contraseña"> 
             <span class="eyeboton" ><i class="far fa-eye-slash"></i></span> <br><br><br>
             <input id="botonlogin" class="submit-form" type="submit" value="Iniciar sesión"><br><br><br>

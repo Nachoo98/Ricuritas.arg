@@ -1,6 +1,10 @@
 const fs=require('fs');
 const path = require('path');
-const bcrypt = require('bcryptjs');// NO ES LO DEFINITIVO
+const bcrypt = require('bcryptjs');
+const {validationResult}=require('express-validator');
+const User = require('../models/User');
+
+
 
 const usersFilePath = path.join(__dirname,'../data/usuarios.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));// posible falla
@@ -38,27 +42,37 @@ const usersControllers={
     
     },
     logeando:(req,res)=>{
-        
-    let usuarios=users;
-    let cont=1;
-    for (let i=0;i<usuarios.length;i++)
-    {
-        cont++;
-        if(usuarios[i].usuario==req.body.usuario){
-        
-            let passwordOk=bcrypt.compareSync(req.body.password,usuarios[i].password)
-            
-            if(passwordOk){
-                res.redirect('/home');
-            }else{
-                res.send("ERROR DE CONTRASEÑA"); //cartelito error contraseña
-            }
-        }else if(cont>usuarios.length){
-            res.send("ERROR DE USUARIO");//cartelito error usuario
-        }
-    }
-    },
+        let userToLogin = User.findByField('usuario', req.body.usuario);
+		
+		if(userToLogin) {
+			let isOkThePassword = bcrypt.compareSync(req.body.password, userToLogin.password);
+			if (isOkThePassword) {
+				delete userToLogin.password;
+				req.session.userLogged = userToLogin;
 
+				if(req.body.remember_user) {
+					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+				}
+                res.send('Logueado!!')
+				/*return res.redirect('/home');*/
+			} 
+			return res.render('users/login', {
+				errors: {
+					usuario: {
+						msg: 'La contraseña es invalida'
+					}
+				}
+			});
+		}
+
+		return res.render('users/login', {
+			errors: {
+				usuario: {
+					msg: 'Usuario no encontrado'
+				}
+			}
+		});
+    },
 }
 
 module.exports=usersControllers;
