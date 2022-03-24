@@ -154,5 +154,29 @@
   "direction": "Callefalsa123",
   "notas": "Timbre 1",
   "imagen": "1648086594936.png"
+ },
+ {
+  "id": 14,
+  "nombre": "Mickey",
+  "apellido": "Mouse",
+  "email": "mouse@gmail.com",
+  "usuario": "mickey",
+  "password": "$2a$10$.lJR0iDXaAd3FdBRefPRrucA0HlcR4SyNtOgtlLWdRBPLlFvRvjLy",
+  "telefono": "1122334455",
+  "direction": "CalleFalsa1234",
+  "notas": "Depto",
+  "imagen": "1648134314194.jpg"
+ },
+ {
+  "id": 15,
+  "nombre": "Capitan",
+  "apellido": "Rex",
+  "email": "rex@gmail.com",
+  "usuario": "rex",
+  "password": "$2a$10$7biVCM2cWIMJXtB1hAJ2EemHeS/q7zUKW8x68FsSi5Kzl5fkBc.Cu",
+  "telefono": "1122334455",
+  "direction": "CalleFalsa1234",
+  "notas": "Timbre 1",
+  "imagen": "1648138720345.jpg"
  }
 ]

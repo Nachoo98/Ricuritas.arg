@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('../partials/head')%>
+
+<body>
+    <%-include('../partials/header')%>
+    <main class="mainlogin2" >
+        <div class="mainlogin">
+        <img src="/imag/<%= user.imagen%>" class="imgPerfil"><br>
+        <div>
+            <h4><%= user.usuario%></h4>
+         </div><br>
+        <!--Datos básicos del Usuario (correo,direccion,telefono,notas,etc) -->
+        <div><%= user.email%></div><br>
+        <div><%= user.direction%></div><br>
+        <div><%= user.telefono%></div><br>
+        <div><%= user.notas%></div><br>
+        </div>
+    </main>
+    <%-include('../partials/footer')%>
+</body>
+</html>    

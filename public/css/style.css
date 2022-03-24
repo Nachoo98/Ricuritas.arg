@@ -419,6 +419,7 @@ padding: 1%;
   border-radius: 5px;
   border:rgb(190, 190, 166);
   padding: 10px;
+  text-decoration:none;
 }
 
 .footerlogin{
@@ -491,6 +492,15 @@ padding: 1%;
 .detalleListado p{
   font-size: 12px;
  }
+
+
+ .imgPerfil{
+   display: flex;
+   align-self:center;
+  width: 25%;
+  height: 25%;
+  border-radius: 100%;
+  }
 
 @media only screen and (min-width: 720px)
 { 

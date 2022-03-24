@@ -39,8 +39,10 @@ app.listen(process.env.PORT || 3015, ()=>{
     console.log("Servidor corriendo");
 });
 
-//--------------------SPRINT 5-------------------------
-//Crear vista de usuario
+//--------------------DETALLES-------------------------
 //rutas => Crear producto (para no ingresar por url)
-//Validar paso a paso registro.
+//middlewares y Header Logueado
+//cookies
+//logout
+//productos
 //-----------------------------------------------------

@@ -17,6 +17,16 @@ const usersControllers={
         res.render('users/login');
     },
     registrado:(req,res)=>{
+
+		const resultValidation = validationResult(req);
+
+		if (resultValidation.errors.length > 0) {
+			return res.render('users/registro', {
+				errors: resultValidation.mapped(),
+				old: req.body
+			});
+		}
+
         let usuarios = users;
         
         let nombreImagen=req.file.filename;
@@ -53,8 +63,8 @@ const usersControllers={
 				if(req.body.remember_user) {
 					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
 				}
-                res.send('Logueado!!')
-				/*return res.redirect('/home');*/
+                /*res.send('Logueado!!')*/
+				return res.redirect('/usuarios/perfil');
 			} 
 			return res.render('users/login', {
 				errors: {
@@ -73,6 +83,10 @@ const usersControllers={
 			}
 		});
     },
+	perfil:(req,res)=>{
+
+		res.render('users/perfil',{user:req.session.userLogged});
+	}
 }
 
 module.exports=usersControllers;
