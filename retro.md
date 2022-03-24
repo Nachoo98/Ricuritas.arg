@@ -1,3 +1,14 @@
+### Retrospectiva (Sprint 5)
+
+-Hacemos una llamada para realizar el Sprint 5 en conjunto por la cantidad de consignas, lo que no se alcance a realizar en la primer llamada se realizará para la siguiente llamada programada.
+
+-Usamos la parte práctica de la clases para avanzar con el Sprint 5
+
+-Programamos una ultima llamada para completar los detalles estéticos de este Sprint.
+
+-Actualizamos el tablero de Trello con los nuevos objetivos.
+
+***
 ### Retrospectiva (Sprint 4)
 
 -Hacemos una llamada para realizar el Sprint 4 en conjunto por la cantidad de consignas, lo que no se alcance a realizar en la primer llamada se realizará para la siguiente llamada programada.

@@ -40,9 +40,8 @@ app.listen(process.env.PORT || 3015, ()=>{
 });
 
 //--------------------DETALLES-------------------------
-//rutas => Crear producto (para no ingresar por url)
-//middlewares y Header Logueado
-//cookies
-//logout
+//rutas => Crear producto (para no ingresar por url) ?
+//Header Logueado
+//Middlewares y cookies
 //productos
 //-----------------------------------------------------

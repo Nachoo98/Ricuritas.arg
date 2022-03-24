@@ -9,6 +9,9 @@ const router=express.Router();
 const multer=require('multer');
 const path=require('path');
 const validations=require('../middlewares/validateRegisterMiddleware');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+/*const authMiddleware = require('../middlewares/authMiddleware');*/
+
 
 const multerDiskStorage = multer.diskStorage({
     destination: function(req, file, cb) {       // request, archivo y callback que almacena archivo en destino
@@ -23,18 +26,12 @@ const multerDiskStorage = multer.diskStorage({
 const uploadFile = multer({ storage: multerDiskStorage });
 //--------------------------------------------------------
 
-router.get('/registro', usersControllers.registro)
+router.get('/registro', guestMiddleware, usersControllers.registro)
 router.post('/registrado',uploadFile.single('imagenUsuario'), validations, usersControllers.registrado)
-/*
-Formulario de registro
-router.get('/register', guestMiddleware, usersController.register);
-
-Procesar el registro
-router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
-*/
-
-router.get('/login', usersControllers.login)
+router.get('/login', guestMiddleware, usersControllers.login)
 router.post('/logins',usersControllers.logeando)
 router.get('/perfil',usersControllers.perfil)
+
+router.get('/logout', usersControllers.logout)
 
 module.exports=router;
