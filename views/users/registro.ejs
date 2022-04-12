@@ -71,7 +71,7 @@
                      <%= errors.imagenUsuario.msg %> 
                  </div>
              <% } %>
-            <input type="text" name="notas" placeholder="Notas(opcional)" value="<%= locals.old ? old.notas : null %>"><br><br><br>
+            <input type="text" name="notas" placeholder="Notas" value="<%= locals.old ? old.notas : null %>"><br><br><br>
             <% if (locals.errors && errors.notas) { %>
                 <div>
                      <%= errors.notas.msg %> 

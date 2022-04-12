@@ -7,7 +7,7 @@ const User = require('../models/User');
 
 
 const usersFilePath = path.join(__dirname,'../data/usuarios.json');
-const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));// posible falla
+const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 const usersControllers={
     registro:(req,res)=>{
@@ -33,6 +33,8 @@ const usersControllers={
 
 		let idNuevo = usuarios[usuarios.length-1].id + 1;
 
+		
+
       let nuevoUsuario = {
 			id: idNuevo,
 			nombre: req.body.nombre,
@@ -48,7 +50,7 @@ const usersControllers={
 
         usuarios.push(nuevoUsuario);
         fs.writeFileSync(usersFilePath, JSON.stringify(usuarios,null,' '));
-        res.redirect('/home');
+        res.redirect('/usuarios/check');
     
     },
     logeando:(req,res)=>{
@@ -90,6 +92,10 @@ const usersControllers={
 	logout:(req,res)=>{
 		req.session.destroy();
 		return res.redirect('/');
+	},
+
+	check:(req,res)=>{
+		res.render('users/check')
 	}
 }
 

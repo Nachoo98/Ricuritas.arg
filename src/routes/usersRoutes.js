@@ -34,4 +34,6 @@ router.get('/perfil',usersControllers.perfil)
 
 router.get('/logout', usersControllers.logout)
 
+router.get('/check',usersControllers.check)
+
 module.exports=router;
