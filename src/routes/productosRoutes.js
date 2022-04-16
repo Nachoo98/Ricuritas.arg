@@ -29,6 +29,7 @@ router.get('/detail/:id', productosControllers.detail)
 router.get('/editar/:id', productosControllers.editar)
 router.put('/editar/:id', productosControllers.editado)
 router.delete('/editar/:id', productosControllers.destroy)
+router.get('/test',productosControllers.test)
 
 
 

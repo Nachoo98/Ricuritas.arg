@@ -1,6 +1,9 @@
 const fs=require('fs');
 const path = require('path');
 
+const db = require('../../database/models');
+
+
 const productsFilePath = path.join(__dirname,'../data/productos.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));// posible falla
 
@@ -102,6 +105,13 @@ const productosControllers={
     
             res.redirect('/productos');
         
+    },
+    test:(req,res)=>{
+
+        db.Usuario.findAll().then((lista)=>{
+            res.render('products/test',{test : lista})
+        })
+
     },
 
 }

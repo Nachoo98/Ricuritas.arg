@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('../partials/head')%>
+
+<body> 
+    <%-include('../partials/header')%>
+    <main c>
+
+        <h1>TABLAS DE BASE DE DATOS</h1>
+       <%  for (let i=0;i<test.length;i++) { %>
+
+        <h2><%=test[i].id%></h2>
+       <% } %>
+    </main>
+    <%-include('../partials/footer')%>
+</body>
+</html>
