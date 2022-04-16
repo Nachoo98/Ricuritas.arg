@@ -14,5 +14,22 @@ let config = {
     }
 
     const factura = sequelize.define(alias,columnas,config);
+   
+   Factura.associate = function (models){
+
+       Factura.Hasone(models.Pedido, {   
+           as: "Pedido",
+           foreignKey: "pedido_FK"
+            });
+    }
+
+   Factura.associate = function (models){
+
+        Factura.hasMany(models.MetodoDePago, {   
+            as: "MetodoDePago",
+             foreignKey: "metodo_FK"
+             });
+    }
+
     return factura
 }

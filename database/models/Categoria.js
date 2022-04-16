@@ -13,5 +13,14 @@
         }
     
         const categoria = sequelize.define(alias,columnas,config);
+
+        Categoria.associate = function (models){ 
+
+            Categoria.BelongsTo(models.Producto, {   
+                as: "Producto",
+                foreignKey: "categoria_FK"
+                 });
+         }
+
         return categoria
     }

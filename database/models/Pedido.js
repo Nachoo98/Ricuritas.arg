@@ -19,5 +19,41 @@ let config = {
     }
 
     const pedido = sequelize.define(alias,columnas,config);
+
+/*    Pedido.associate = function (models){
+
+        Pedido.Hasone(models.Factura, {   
+            as: "Factura",
+            foreignKey: "pedido_FK"
+             });
+    } ----------------------------CONSULTAR------------------------------*/
+    Pedido.associate = function (models){ //Pedido o pedido??
+
+        Pedido.hasMany(models.Usuario, {   
+            as: "Usuario",
+            foreignKey: "usuario_FK"
+             });
+     }
+     
+     Pedido.associate = function (models){
+
+        Pedido.hasMany(models.Estado, {   
+            as: "Estado",
+            foreignKey: "estado_FK"
+             });
+     }
+
+     Pedido.associate = function (models){
+
+        Pedido.belongsToMany(models.Producto, {   
+            as: "Producto",
+            through:"Producto_Pedido",
+            foreignKey: "pedido_FK",
+            otherKey:"producto_FK",
+            timestamps:false
+             });
+     }
+     
+     
     return pedido
 }

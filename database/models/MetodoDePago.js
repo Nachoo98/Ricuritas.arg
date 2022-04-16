@@ -13,5 +13,16 @@ let config = {
     }
 
     const metodoDePago = sequelize.define(alias,columnas,config);
+
+
+    MetodoDePago.associate = function (models){ 
+
+        MetodoDePago.BelongsTo(models.Factura, {   
+            as: "Factura",
+            foreignKey: "metodo_FK"
+             });
+     }
+
+     
     return metodoDePago
 }

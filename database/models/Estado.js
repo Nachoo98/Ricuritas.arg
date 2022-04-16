@@ -13,5 +13,16 @@ let config = {
     }
 
     const estado = sequelize.define(alias,columnas,config);
+
+
+   Estado.associate = function (models){ 
+
+     Estado.BelongsTo(models.Pedido, {   
+            as: "Pedido",
+            foreignKey: "estado_FK"
+             });
+     }
+
+
     return estado
 }

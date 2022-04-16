@@ -21,5 +21,19 @@ let config = {
     }
 
     const usuario = sequelize.define(alias,columnas,config);
+
+
+    Usuario.associate = function (models){ 
+
+        Usuario.BelongsTo(models.Pedido, {   
+            as: "Pedido",
+            foreignKey: "usuario_FK"
+             });
+     }
+
+
+
+
+
     return usuario
 }

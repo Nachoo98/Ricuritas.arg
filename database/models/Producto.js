@@ -16,5 +16,26 @@ let config = {
     }
 
     const producto = sequelize.define(alias,columnas,config);
+
+
+    Producto.associate = function (models){
+
+        Producto.hasMany(models.Categoria, {   
+            as: "Producto",
+            foreignKey: "categoria_FK"
+             });
+     }
+
+     Producto.associate = function (models){
+
+        Producto.belongsToMany(models.Pedido, {   
+            as: "Pedido",
+            through:"Producto_Pedido",
+            foreignKey: "producto_FK",
+            otherKey:"pedido_FK",
+            timestamps:false
+             });
+     }
+
     return producto
 }
