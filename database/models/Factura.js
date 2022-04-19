@@ -15,17 +15,17 @@ let config = {
 
     const factura = sequelize.define(alias,columnas,config);
    
-   Factura.associate = function (models){
+   factura.associate = function (models){
 
-       Factura.Hasone(models.Pedido, {   
+       factura.hasOne(models.Pedido, {   
            as: "Pedido",
            foreignKey: "pedido_FK"
             });
     }
 
-   Factura.associate = function (models){
+   factura.associate = function (models){
 
-        Factura.hasMany(models.MetodoDePago, {   
+        factura.hasMany(models.MetodoDePago, {   
             as: "MetodoDePago",
              foreignKey: "metodo_FK"
              });

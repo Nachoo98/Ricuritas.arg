@@ -14,9 +14,9 @@
     
         const categoria = sequelize.define(alias,columnas,config);
 
-        Categoria.associate = function (models){ 
+        categoria.associate = function (models){ 
 
-            Categoria.BelongsTo(models.Producto, {   
+            categoria.belongsTo(models.Producto, {   
                 as: "Producto",
                 foreignKey: "categoria_FK"
                  });

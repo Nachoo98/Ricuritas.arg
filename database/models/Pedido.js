@@ -27,25 +27,25 @@ let config = {
             foreignKey: "pedido_FK"
              });
     } ----------------------------CONSULTAR------------------------------*/
-    Pedido.associate = function (models){ //Pedido o pedido??
+    pedido.associate = function (models){ 
 
-        Pedido.hasMany(models.Usuario, {   
+        pedido.hasMany(models.Usuario, {   
             as: "Usuario",
             foreignKey: "usuario_FK"
              });
      }
      
-     Pedido.associate = function (models){
+     pedido.associate = function (models){
 
-        Pedido.hasMany(models.Estado, {   
+        pedido.hasMany(models.Estado, {   
             as: "Estado",
             foreignKey: "estado_FK"
              });
      }
 
-     Pedido.associate = function (models){
+     pedido.associate = function (models){
 
-        Pedido.belongsToMany(models.Producto, {   
+        pedido.belongsToMany(models.Producto, {   
             as: "Producto",
             through:"Producto_Pedido",
             foreignKey: "pedido_FK",

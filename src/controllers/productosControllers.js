@@ -64,7 +64,20 @@ const productosControllers={
         res.render('products/producto',{producto: productoEncontrado});
     },
     creado:(req,res)=>{
-        let productos = products;
+
+      db.Producto.create(
+     {
+       nombreProducto: req.body.nombre,
+       stock:req.body.stock,
+       precio:req.body.price,
+       cantidad:req.body.cantidad,
+       imagen:req.file.filename,
+       descripcion:req.body.description,
+    }).then((res.redirect('/productos')))
+
+
+
+        /*let productos = products;
         
         let nombreImagen=req.file.filename;
 
@@ -80,7 +93,7 @@ const productosControllers={
 
         productos.push(nuevoProducto);
         fs.writeFileSync(productsFilePath, JSON.stringify(productos,null,' '));
-        res.redirect('/productos');
+        res.redirect('/productos');*/
     },
     destroy:(req,res)=>{
       

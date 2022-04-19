@@ -15,9 +15,9 @@ let config = {
     const estado = sequelize.define(alias,columnas,config);
 
 
-   Estado.associate = function (models){ 
+   estado.associate = function (models){ 
 
-     Estado.BelongsTo(models.Pedido, {   
+     estado.belongsTo(models.Pedido, {   
             as: "Pedido",
             foreignKey: "estado_FK"
              });
