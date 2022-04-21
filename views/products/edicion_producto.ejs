@@ -12,19 +12,19 @@
             <form action="/productos/editar/<%=producto.id%>?_method=PUT" method="POST">
                 <div >
 					<div >
-						<label for="name" class="crearEditarLabel" >Nombre del producto:</label>
-						<input type="text" id="name" name="nombre" value="<%=producto.nombre%>" >
+						<label for="nombreProducto" class="crearEditarLabel" >Nombre del producto:</label>
+						<input type="text" id="name" name="nombreProducto" value="<%=producto.nombreProducto%>" >
 					</div>
                     <br>
 					<div >
-						<label for="price" class="crearEditarLabel">Precio del producto:</label>
-						<input type="text" id="price" name="price" value="<%=producto.price%>" >
+						<label for="precio" class="crearEditarLabel">Precio del producto:</label>
+						<input type="text" id="price" name="precio" value="<%=producto.precio%>" >
 					</div>
                     <br>
 
 					<div>
-						<label for="description" class="crearEditarLabel">Descripción:</label>
-						<textarea name="description" id="description" class="description" placeholder="<%=producto.description%>"></textarea>
+						<label for="descripcion" class="crearEditarLabel">Descripción:</label>
+						<textarea name="descripcion" id="description" class="description" placeholder="<%=producto.descripcion%>"></textarea>
 					</div>
                     <br>
 					<div>

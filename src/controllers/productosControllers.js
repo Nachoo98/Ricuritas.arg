@@ -4,22 +4,32 @@ const path = require('path');
 const db = require('../../database/models');
 
 
-const productsFilePath = path.join(__dirname,'../data/productos.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));// posible falla
+/*const productsFilePath = path.join(__dirname,'../data/productos.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));*/
 
 
 const productosControllers={
     index:(req,res)=>{
 
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        res.render('products/listado-productos',{productos:products});
+        db.Producto.findAll().then((productos)=>{
+            res.render('products/listado-productos',{productos:productos});
+        })
+        /*const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));*/
+      
     },
     crear:(req,res)=>{
         res.render('products/creacion_producto');
     },
 
     editar:(req,res)=>{
-        let  idProductoSeleccionado = req.params.id;
+        
+        db.Producto.findByPk(req.params.id)
+        .then((productoEncontrado)=>{
+            res.render("products/edicion_producto",{producto: productoEncontrado});
+        })
+       
+       
+        /*let  idProductoSeleccionado = req.params.id;
 		let productoEncontrado=null;
 
 		for (let p of products){
@@ -29,11 +39,22 @@ const productosControllers={
 			}
 		}
 
-		res.render("products/edicion_producto",{producto: productoEncontrado});
+		res.render("products/edicion_producto",{producto: productoEncontrado});*/
        
     },
     editado:(req,res)=>{
-        
+
+        let idp=req.params.id;
+
+ 
+            db.Producto.update({nombreProducto:req.body.nombreProducto,
+                precio:req.body.precio,
+               descripcion:req.body.descripcion},{where:{
+                    id:idp
+               }})
+            res.redirect('/productos');
+    
+        /*
             let productoModificado = req.body;
             let productoId=req.params.id;
             let productos = products;
@@ -48,11 +69,17 @@ const productosControllers={
             }
         
             fs.writeFileSync(productsFilePath, JSON.stringify(productos , null , ' '));
-            res.redirect('/productos');
+            res.redirect('/productos');*/
     },
     
     detail:(req,res)=>{
-        let  idProductoSeleccionado = req.params.id;
+        
+        db.Producto.findByPk(req.params.id)
+        .then((productoEncontrado)=>{
+            console.log(productoEncontrado.descripcion)
+            res.render('products/producto',{producto: productoEncontrado})
+        })
+        /*let  idProductoSeleccionado = req.params.id;
 		let productoEncontrado=null;
 
 		for (let p of products){
@@ -60,15 +87,14 @@ const productosControllers={
 				productoEncontrado=p;
 				break;
 			}
-		}
-        res.render('products/producto',{producto: productoEncontrado});
+		}res.render('products/producto',{producto: productoEncontrado});*/
     },
     creado:(req,res)=>{
 
       db.Producto.create(
      {
        nombreProducto: req.body.nombre,
-       stock:req.body.stock,
+       stock:req.body.cantidad,
        precio:req.body.price,
        cantidad:req.body.cantidad,
        imagen:req.file.filename,
@@ -97,7 +123,14 @@ const productosControllers={
     },
     destroy:(req,res)=>{
       
-            let idProductoSeleccionado = req.params.id;
+        let idp=req.params.id;
+
+        db.Producto.destroy({where:{id:idp}})
+
+        res.redirect('/productos');
+
+
+            /*let idProductoSeleccionado = req.params.id;
             let productoEncontrado=null;
     
             for (let p of products){
@@ -114,10 +147,7 @@ const productosControllers={
 
             fs.unlinkSync(path.join(__dirname, '../../public/imag', productoEncontrado.imagen));
             fs.writeFileSync(productsFilePath, JSON.stringify(productos2,null,' '));
-           
-    
-            res.redirect('/productos');
-        
+           */
     },
     test:(req,res)=>{
 

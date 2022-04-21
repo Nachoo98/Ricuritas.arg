@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const {validationResult}=require('express-validator');
 const User = require('../models/User');
 
-
+const db = require('../../database/models');
 
 const usersFilePath = path.join(__dirname,'../data/usuarios.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
@@ -18,9 +18,22 @@ const usersControllers={
     },
     registrado:(req,res)=>{
 
-		const resultValidation = validationResult(req);
+     db.Usuario.create(
+		{
+		 mail:req.body.mail,
+		 contrasenia:req.body.contrasenia,
+		 imagen:req.body.imagen,
+		 nombre:req.body.nombre,
+		 apellido:req.body.apellido,
+		 nombreUsuario:req.body.nombreUsuario,
+		 notas:req.body.notas,
+		 telefono:req.body.telefono,
+		 direccion:req.body.direccion}
+	 ).then((res.redirect('/usuarios/check')))
 
-		if (resultValidation.errors.length > 0) {
+		//const resultValidation = validationResult(req);
+
+		/*if (resultValidation.errors.length > 0) {
 			return res.render('users/registro', {
 				errors: resultValidation.mapped(),
 				old: req.body
@@ -51,7 +64,7 @@ const usersControllers={
         usuarios.push(nuevoUsuario);
         fs.writeFileSync(usersFilePath, JSON.stringify(usuarios,null,' '));
         res.redirect('/usuarios/check');
-    
+    */
     },
     logeando:(req,res)=>{
         let userToLogin = User.findByField('usuario', req.body.usuario);
@@ -90,12 +103,13 @@ const usersControllers={
 		res.render('users/perfil',{user:req.session.userLogged});
 	},
 	logout:(req,res)=>{
+
 		req.session.destroy();
 		return res.redirect('/');
 	},
 
 	check:(req,res)=>{
-		res.render('users/check')
+		res.render('users/check')//pulir vista
 	}
 }
 
