@@ -791,3 +791,17 @@ flex-grow: 0.6;
   .linkListado  :hover {
    color: #cf4400;
   }
+
+  /* Vista Check------------------------------------------------------*/
+
+  .tilde{
+    color:#0df053;
+    font-size: 100px;
+    
+  }
+
+  .registrado{
+    text-align: center;
+    font-weight: bold;
+   
+  }

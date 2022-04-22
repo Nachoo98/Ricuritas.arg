@@ -1,3 +1,20 @@
+### Retrospectiva (Sprint 6)
+
+-Hacemos una llamada para realizar el Sprint 6 en conjunto por la cantidad de consignas, lo que no se alcance a realizar en la primera llamada se realizará para la siguiente llamada programada.
+
+-Usamos la parte práctica de la clases para avanzar con el Sprint 6
+
+-Programamos una ultima llamada para completar los detalles estéticos de este Sprint.
+
+-Actualizamos el tablero de Trello con los nuevos objetivos.
+
+-Las credenciales de la base de datos del proyecto son: 
+
+host: mysql-jazminoballos.alwaysdata.net
+usuario: 263295_jazmin
+password: Digitalhouse11
+
+
 ### Retrospectiva (Sprint 5)
 
 -Hacemos una llamada para realizar el Sprint 5 en conjunto por la cantidad de consignas, lo que no se alcance a realizar en la primer llamada se realizará para la siguiente llamada programada.
