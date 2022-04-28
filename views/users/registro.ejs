@@ -11,72 +11,72 @@
         </div>
         <form action="/usuarios/registrado" method="POST" enctype="multipart/form-data">
             <input type="text" name="nombre" placeholder="Nombre" value="<%= locals.old ? old.nombre: null %>"><br><br><br>
-              <!-- <%# if (locals.errors && errors.nombre) { %>  
+              <% if (locals.errors && errors.nombre) { %>  
                 <div>
-                    <%# = errors.nombre.msg %> 
+                    <%= errors.nombre.msg %> 
                 </div>
-            <%#  } %>   -->
+            <%  } %>  
             <input type="text" name="apellido" placeholder="Apellido" value="<%= locals.old ? old.apellido : null %>"><br><br><br>
-            <!-- <%#if (locals.errors && errors.apellido) { %>
+            <%if (locals.errors && errors.apellido) { %>
                 <div>
-                    <%#= errors.apellido.msg %> 
+                    <%= errors.apellido.msg %> 
                 </div>
-            <%# } %> -->
-            <input type="email" id="email" name="mail" placeholder="Email" value="<%= locals.old ? old.email : null %>"><br><br><br>
-            <!-- <%# if (locals.errors && errors.mail) { %>
+            <% } %> 
+            <input type="email" id="email" name="mail" placeholder="Email" value="<%= locals.old ? old.mail : null %>"><br><br><br>
+           <% if (locals.errors && errors.mail) { %>
                 <div>
-                    <%#= errors.mail.msg %> 
+                    <%= errors.mail.msg %> 
                 </div>
-            <%# } %> -->
-            <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" value="<%= locals.old ? old.usuario : null %>"><br><br><br>
-            <!-- <%# if (locals.errors && errors.nombreUsuario) { %>
+            <% } %> 
+            <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" value="<%= locals.old ? old.nombreUsuario : null %>"><br><br><br>
+           <% if (locals.errors && errors.nombreUsuario) { %>
                 <div>
-                    <%#= errors.nombreUsuario.msg %> 
+                    <%= errors.nombreUsuario.msg %> 
                 </div>
-            <%# } %> -->
+            <% } %> 
             <input type="password" name="contrasenia" placeholder="Contraseña">
             <span class="eyeboton" ><i class="far fa-eye-slash"></i></span> <br><br><br>
-            <!-- <%# if (locals.errors && errors.contrasenia) { %>
+           <% if (locals.errors && errors.contrasenia) { %>
                 <div>
-                    <%#= errors.contrasenia.msg %> 
+                    <%= errors.contrasenia.msg %> 
                 </div>
-            <%# } %> -->
+            <% } %> 
             <input type="password" placeholder="Confirmar contraseña">
             <span class="eyeboton" ><i class="far fa-eye-slash"></i></span> <br><br><br>
-            <!-- <%# if (locals.errors && errors.contrasenia) { %>
+           <% if (locals.errors && errors.contrasenia) { %>
                 <div>
-                    <%#= errors.contrasenia.msg %> 
+                    <%= errors.contrasenia.msg %> 
                 </div>
-            <%# } %> -->
+            <% } %> 
             <input type="tel" name="telefono" placeholder="Nro. Teléfono" value="<%= locals.old ? old.telefono : null %>"><br><br><br>
-            <!-- <%# if (locals.errors && errors.telefono) { %>
+             <% if (locals.errors && errors.telefono) { %>
                 <div>
-                    <%#= errors.telefono.msg %> 
+                    <%= errors.telefono.msg %> 
                 </div>
-            <%# } %> -->
-            <input type="text" name="direccion" placeholder="Dirección" value="<%= locals.old ? old.direction : null %>"><br><br>
-            <!-- <%# if (locals.errors && errors.direccion) { %>
+            <% } %>
+            <input type="text" name="direccion" placeholder="Dirección" value="<%= locals.old ? old.direccion : null %>"><br><br>
+             <% if (locals.errors && errors.direccion) { %>
                 <div>
-                    <%#= errors.direccion.msg %> 
+                    <%= errors.direccion.msg %> 
                 </div>
-            <%# } %> -->
+            <% } %> 
             <div class="subirImagen">
                 <label>Subir Imágen:</label>
                 <br>
                 <input type="file" name="imagen" id="file" class="inputfile"/>
                 <label for="file">Seleccionar Imágen</label>
             </div><br>
-            <!-- <%# if (locals.errors && errors.imagen) { %>
+           <% if (locals.errors && errors.imagen) { %>
                 <div>
-                     <%#= errors.imagen.msg %> 
+                     <%= errors.imagen.msg %> 
                  </div>
-             <%# } %> -->
+             <% } %> 
             <input type="text" name="notas" placeholder="Notas" value="<%= locals.old ? old.notas : null %>"><br><br><br>
-            <!-- <%# if (locals.errors && errors.notas) { %>
+           <% if (locals.errors && errors.notas) { %>
                 <div>
-                     <%#= errors.notas.msg %> 
+                     <%= errors.notas.msg %> 
                  </div>
-             <%# } %> -->
+             <% } %> 
             <input id="botonlogin" class="submit-form" type="submit" value="Registrarse"><br><br>
             <h6>Dando click en Registrarse,aceptas nuestros <a href="#">Términos y condiciones</a></h6><br><br>
         </form>

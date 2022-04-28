@@ -4,6 +4,7 @@ const bcrypt = require('bcryptjs');
 const {validationResult}=require('express-validator');
 const User = require('../models/User');
 
+
 const db = require('../../database/models');
 
 const usersControllers={
@@ -14,6 +15,15 @@ const usersControllers={
         res.render('users/login');
     },
     registrado:(req,res)=>{
+
+		const resultValidation = validationResult(req);
+
+		if (resultValidation.errors.length > 0) {
+			return res.render('users/registro', {
+				errors: resultValidation.mapped(),
+				old: req.body
+			});
+		}
 
      db.Usuario.create(
 		{
@@ -27,9 +37,19 @@ const usersControllers={
 		 telefono:req.body.telefono,
 		 direccion:req.body.direccion}
 	 ).then((res.redirect('/usuarios/check')))
+
     },
     logeando:(req,res)=>{
 
+		const resultValidation = validationResult(req);
+
+		if (resultValidation.errors.length > 0) {
+			return res.render('users/registro', {
+				errors: resultValidation.mapped(),
+				old: req.body
+			});
+		}
+		
 			db.Usuario.findOne({where:{nombreUsuario:req.body.nombreUsuario}}).then((userToLogin)=>{
 				if(userToLogin.dataValues) {
 				let isOkThePassword =bcrypt.compareSync(req.body.contrasenia, userToLogin.dataValues.contrasenia);

@@ -1,3 +1,8 @@
+### Retrospectiva (Sprint 7)
+
+-Utilizamos el tiempo de la parte práctica para comenzar con el Sprint 7.
+
+
 ### Retrospectiva (Sprint 6)
 
 -Hacemos una llamada para realizar el Sprint 6 en conjunto por la cantidad de consignas, lo que no se alcance a realizar en la primera llamada se realizará para la siguiente llamada programada.
