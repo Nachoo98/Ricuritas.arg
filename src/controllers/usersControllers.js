@@ -14,7 +14,7 @@ const usersControllers={
     login:(req,res)=>{
         res.render('users/login');
     },
-    registrado:(req,res)=>{
+    registrado: async(req,res)=>{
 
 		const resultValidation = validationResult(req);
 
@@ -25,6 +25,31 @@ const usersControllers={
 			});
 		}
 
+		var ingresado=req.body.nombreUsuario
+		var encontrado=false;
+	  
+
+		await db.Usuario.findAll().then((Usuarios)=>{ 
+			for (let i=0;i<Usuarios.length;i++){
+		
+			if(ingresado==Usuarios[i].dataValues.nombreUsuario){
+				encontrado=true;
+				break;
+			}
+			}
+		});
+
+		if(encontrado==true){
+			
+			return res.render('users/registro', {
+				errors: {
+					nombreUsuario: {
+						msg: 'El nombre de usuario ya existe'
+					}
+				}
+			})
+		}
+		
      db.Usuario.create(
 		{
 		 mail:req.body.mail,
@@ -39,18 +64,46 @@ const usersControllers={
 	 ).then((res.redirect('/usuarios/check')))
 
     },
-    logeando:(req,res)=>{
+    logeando: async(req,res)=>{
 
 		const resultValidation = validationResult(req);
 
+		var ingresado=req.body.nombreUsuario
+		var encontrado=false;
+	  
+
+		await db.Usuario.findAll().then((Usuarios)=>{ 
+			for (let i=0;i<Usuarios.length;i++){
+		
+			if(ingresado==Usuarios[i].dataValues.nombreUsuario){
+				encontrado=true;
+				break;
+			}
+			}
+		});
+
+		if(encontrado==false){
+			 res.render('../views/users/login', {
+				errors: {
+					nombreUsuario: {
+						msg: 'El usuario es inexistente'
+					}
+				}
+			})
+		}
+
 		if (resultValidation.errors.length > 0) {
-			return res.render('users/registro', {
+			return res.render('users/login', {
 				errors: resultValidation.mapped(),
 				old: req.body
 			});
 		}
 		
-			db.Usuario.findOne({where:{nombreUsuario:req.body.nombreUsuario}}).then((userToLogin)=>{
+	
+		
+
+		
+		db.Usuario.findOne({where:{nombreUsuario:req.body.nombreUsuario}}).then((userToLogin)=>{
 				if(userToLogin.dataValues) {
 				let isOkThePassword =bcrypt.compareSync(req.body.contrasenia, userToLogin.dataValues.contrasenia);
 				if (isOkThePassword) {
@@ -58,11 +111,20 @@ const usersControllers={
 					req.session.userLogged = userToLogin.dataValues;
 					return res.redirect('/usuarios/perfil');
 				}
+				else{
+					res.render('users/login', {
+						errors: {
+							contrasenia: {
+								msg: 'Contraseña inválida'
+							}
+						}
+					})
+				}
 			}
 	});
 
-	
-    },
+	},
+
 	perfil:(req,res)=>{
 
 		res.render('users/perfil',{user:req.session.userLogged});

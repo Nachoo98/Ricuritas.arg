@@ -9,26 +9,26 @@
                  <h5>Formulario de creación de productos</h5>
             </div>
             <br>
-            <form action="/productos/creado" method="POST" enctype="multipart/form-data" >
+            <form action="/productos/creado" method="POST" enctype="multipart/form-data" class="/productos/creado" >
                 <div >
 					<div >
-						<label for="name" class="crearEditarLabel" >Nombre del producto:</label>
-						<input type="text" id="name" name="nombre" placeholder="Ej: Oreo Fritas" >
+						<label for="nombre" class="crearEditarLabel" >Nombre del producto:</label>
+						<input type="text" id="nombre" name="nombre" placeholder="Ej: Oreo Fritas" >
 					</div>
                     <br>
 					<div >
-						<label for="price" class="crearEditarLabel">Precio del producto:</label>
-						<input type="text" id="price" name="price" placeholder="Ej:$ 600" >
+						<label for="precio" class="crearEditarLabel">Precio del producto:</label>
+						<input type="text" id="precio" name="precio" placeholder="Ej:$ 600" >
 					</div>
                     <br>
                     <div >
 						<label for="stock" class="crearEditarLabel">Stock del producto:</label>
-						<input type="text" id="price" name="stock" placeholder="Ej: 5" >
+						<input type="text" id="stock" name="stock" placeholder="Ej: 5" >
 					</div>
                     <br>
                     <div >
 						<label for="cantidad" class="crearEditarLabel">Cantidad del producto:</label>
-						<input type="text" id="price" name="cantidad" placeholder="Ej: 10" >
+						<input type="text" id="cantidad" name="cantidad" placeholder="Ej: 10" >
 					</div>
                     <br>
                     <div class="subirImagen">
@@ -39,8 +39,8 @@
 					</div>
                     <br>
 					<div>
-						<label for="description" class="crearEditarLabel">Descripción:</label>
-						<textarea name="description" id="description" class="description" ></textarea>
+						<label for="descripcion" class="crearEditarLabel">Descripción:</label>
+						<textarea name="descripcion" id="descripcion" class="description" ></textarea>
 					</div>
                     <br>
 					<div >
@@ -51,5 +51,6 @@
         </div>
     </main>
     <%-include('../partials/footer')%>
+    <script src="/JS/creacionProducto.js"></script>
 </body>
 </html>

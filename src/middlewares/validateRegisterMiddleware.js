@@ -10,29 +10,7 @@ module.exports = [
 	body('mail')
 		.notEmpty().withMessage('Tienes que escribir un correo electrónico').bail()
 		.isEmail().withMessage('Debes escribir un formato de correo válido'),
-	body('nombreUsuario').notEmpty().withMessage('Tienes que escribir un usuario').bail()
-	.custom((value,{req})=>{
-	let ingresado=req.body.nombreUsuario
-	
-
-	let usuarios2= db.Usuario.findAll().then((Usuarios)=>{ 
-		let usuarios = [];
-		for (let i=0;i<Usuarios.length;i++){
-		usuarios[i]=Usuarios[i]}
-		return usuarios;
-	});
-
-
-
-	for(let i=0;i<usuarios2.length;i++){
-		if(ingresado==usuarios2[i].nombreUsuario){
-			throw new Error('Nombre de usuario ya existente');
-		}
-	}
-
-	return true;
-	
-	}),
+	body('nombreUsuario').notEmpty().withMessage('Tienes que escribir un usuario'),
 	body('contrasenia').notEmpty().withMessage('Tienes que escribir una contraseña'),
 	body('contrasenia').notEmpty().withMessage('Las contraseñas tienen que coincidir'),
 	body('telefono').notEmpty().withMessage('Tienes que escribir un telefono'),

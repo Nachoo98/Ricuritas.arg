@@ -11,11 +11,18 @@
         </div>
         <form action="/usuarios/logins" method="POST">
             <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@"><br><br><br>
+            <div>
              <% if(locals.errors && errors.nombreUsuario) {%>
                     <span><%= errors.nombreUsuario.msg%> </span>
             <% }%>
+            </div>
             <input type="password" name="contrasenia" placeholder="Contraseña"> 
             <span class="eyeboton" ><i class="far fa-eye-slash"></i></span> <br><br><br>
+            <div>
+                <% if(locals.errors && errors.contrasenia) {%>
+                       <span><%= errors.contrasenia.msg%> </span>
+               <% }%>
+               </div>
             <input id="botonlogin" class="submit-form" type="submit" value="Iniciar sesión"><br><br><br>
             <a id="botonlogin" class="submit-form" type="submit" value="Crear cuenta"  href="/usuarios/registro">Crea tu cuenta</a><br><br>
             <h5>¿Olvidaste tu Contraseña?</h5><br><br>

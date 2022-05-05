@@ -54,10 +54,10 @@ const productosControllers={
      {
        nombreProducto: req.body.nombre,
        stock:req.body.cantidad,
-       precio:req.body.price,
+       precio:req.body.precio,
        cantidad:req.body.cantidad,
        imagen:req.file.filename,
-       descripcion:req.body.description,
+       descripcion:req.body.descripcion,
     }).then((res.redirect('/productos')))
 
     },

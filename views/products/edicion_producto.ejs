@@ -13,18 +13,18 @@
                 <div >
 					<div >
 						<label for="nombreProducto" class="crearEditarLabel" >Nombre del producto:</label>
-						<input type="text" id="name" name="nombreProducto" value="<%=producto.nombreProducto%>" >
+						<input type="text" id="nombre" name="nombreProducto" value="<%=producto.nombreProducto%>" >
 					</div>
                     <br>
 					<div >
 						<label for="precio" class="crearEditarLabel">Precio del producto:</label>
-						<input type="text" id="price" name="precio" value="<%=producto.precio%>" >
+						<input type="text" id="precio" name="precio" value="<%=producto.precio%>" >
 					</div>
                     <br>
 
 					<div>
 						<label for="descripcion" class="crearEditarLabel">Descripción:</label>
-						<textarea name="descripcion" id="description" class="description" placeholder="<%=producto.descripcion%>"></textarea>
+						<textarea name="descripcion" id="descripcion" class="description" placeholder="<%=producto.descripcion%>"></textarea>
 					</div>
                     <br>
 					<div>
@@ -41,5 +41,6 @@
         </div>
     </main>
     <%-include('../partials/footer')%>
+    <script src="/JS/edicionProducto.js"></script>
 </body>
 </html>
