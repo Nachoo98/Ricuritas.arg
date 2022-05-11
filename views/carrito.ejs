@@ -1,84 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ricuritas.arg</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css"> 
-        <script src="https://kit.fontawesome.com/68e050386e.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-</head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricuritas.arg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100&family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/68e050386e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
 
 <body>
     <%-include('./partials/header')%>
 
-    <main class="nacho_main">
-    <div class="nacho_contenedor">
-        <ul class="nacho_productos">
-                  <li class="nacho_subproducto">
-                             <div class="nacho_izquierda">
-                                 <img class="nacho_foto" src="imag/tequeños.png">
-                                 <div class="nacho_detalle">
-                                  <h4>Tequeños</h4>
-                                  <p> Deliciosos tequeños de queso</p>
-                                  <p> x10 Unidades</p>
-                                </div>
-                            </div>
-                            <div class="nacho_derecha">
-                                <button type="submit" value="Eliminar"><i class="fas fa-trash-alt"></i> Eliminar</button>
-                                <button type="submit" value="Modificar"><i class="fas fa-utensils"></i> Modificar</button>
-                                <p><b>Subtotal</b> $900,00</p>
-                            </div>
-                  </li>
-                  <li class="nacho_subproducto">
-                    <div class="nacho_izquierda">
-                        <img class="nacho_foto" src="imag/empanadas1.png">
-                        <div class="nacho_detalle">
-                         <h4>Pastelitos</h4>
-                         <p> Pastelitos Dulces</p>
-                         <p> x12 Unidades</p>
-                       </div>
-                   </div>
-                   <div class="nacho_derecha">
-                    <button type="submit" value="Eliminar"><i class="fas fa-trash-alt"></i> Eliminar</button>
-                    <button type="submit" value="Modificar"><i class="fas fa-utensils"></i> Modificar</button>
-                       <p><b>Subtotal</b> $1.100,00</p>
-                   </div>
-                </li>
-                <li class="nacho_subproducto">
-                    <div class="nacho_izquierda">
-                        <img class="nacho_foto" src="imag/arepas2.png">
-                        <div class="nacho_detalle">
-                         <h4>Arepas</h4>
-                         <p>Mix de Arepas</p>
-                         <p> x6 Unidades</p>
-                       </div>
-                   </div>
-                   <div class="nacho_derecha">
-                       <button type="submit" value="Eliminar"><i class="fas fa-trash-alt"></i> Eliminar</button>
-                       <button type="submit" value="Modificar"><i class="fas fa-utensils"></i> Modificar</button>
-                       <p><b>Subtotal</b> $1.500,00</p>
-                   </div>
-                </li>
+        <main class="nacho_main">
+            <div class="nacho_contenedor">
+                <ul id="nacho_productos">
 
-        </ul>
-        
-        <div class="nacho_total"><p><b>TOTAL</b>:  $3500,00</p></div>
-        
-        <div class="nacho_botones">
-            <a><button type="button" name="seguir_comprando" value="Seguir Comprando"><i class="fas fa-utensils"></i> Seguir Comprando</button></a>
-            <a><button type="button" name="metodo_pago" value="Metodo Pago"><i class="fas fa-credit-card"></i> Metodo de Pago</button></a>
-            <a><button type="button"  name="confirmar_compra" value="Confirmar Compra"><i class="fas fa-check-circle"></i>Confirmar Compra</button></a>
-        </div>
-    </div>  
-    </main>
-    <%-include('./partials/footer')%>
+                </ul>
+                <button id="eliminar" type="submit" value="Eliminar"><i class="fas fa-trash-alt"></i> Eliminar</button>
+                <button type="submit" value="Modificar"><i class="fas fa-utensils"></i> Modificar</button>
+                <div id="contenedorDeTotal">
+
+                </div>
+                <div class="nacho_botones">
+                    <a><button type="button" name="seguir_comprando" value="Seguir Comprando"><i class="fas fa-utensils"></i> Seguir Comprando</button></a>
+                    <a><button type="button" name="metodo_pago" value="Metodo Pago"><i class="fas fa-credit-card"></i> Metodo de Pago</button></a>
+                    <a><button type="button"  name="confirmar_compra" value="Confirmar Compra"><i class="fas fa-check-circle"></i>Confirmar Compra</button></a>
+                </div>
+            </div>
+        </main>
+        <%-include('./partials/footer')%>
+            <script type="module" src="/JS/carritoCarrito.js"></script>
 </body>
+
 </html>
