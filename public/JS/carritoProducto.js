@@ -36,7 +36,7 @@ window.addEventListener('load', function() {
         producto = {
             "id": id.innerText.trim(),
             "nombre": nombreProducto.innerText,
-            "precio": parseInt(precio.innerText.slice(1)) * parseInt(cantidad.value),
+            "precio": parseInt(precio.innerText.slice(1)),
             "cantidad": parseInt(cantidad.value),
             "foto": foto.innerText.trim(),
             "descripcion": descripcion.innerText,

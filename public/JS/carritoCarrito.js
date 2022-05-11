@@ -44,7 +44,7 @@ window.addEventListener('load', function() {
     if (productos.length === 0 && activadoVacio == false) {
         const div = document.createElement('div');
         div.classList.add('nacho_subproducto');
-        div.innerHTML += `<div> <p>El carrito esta vacio</p></div>`
+        div.innerHTML += `<br><br><br><br><br><br><br><br><br><br><div> <p>El carrito esta vacio</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>`
         contenedorProductos.appendChild(div);
         activadoVacio = true
     }
@@ -91,7 +91,7 @@ window.addEventListener('load', function() {
                 if (productos.length === 0 && activadoVacio == false) {
                     const div = document.createElement('div');
                     div.classList.add('nacho_subproducto');
-                    div.innerHTML = `<div> <p>El carrito esta vacio</p></div>`
+                    div.innerHTML = `<br><br><br><br><br><br><br><br><br><br><div> <p>El carrito esta vacio</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>`
                     contenedorProductos.appendChild(div);
                     contenedorTotal.innerHTML = '';
                     const dev = document.createElement('div');
