@@ -823,3 +823,24 @@ display: none;
     width: 100%;
     text-align-last: right;
 }
+
+#eliminar{
+    width:93%;
+    margin-left:20px
+}
+
+#caja3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#eliminar2{
+    background-color: rgb(228, 166, 50);
+    color: #595959;
+    width: 100%;
+    border-radius: 5px;
+    border: rgb(190, 190, 166);
+    padding: 10px;
+    width:20%;
+}

@@ -1,10 +1,13 @@
+/*<i class="fas fa-trash-alt">*/
 window.addEventListener('load', function() {
     const contenedorProductos = document.getElementById('nacho_productos');
     const contenedorTotal = document.getElementById('contenedorDeTotal');
     var productos = JSON.parse(localStorage.getItem('carrito'));
-    var eliminar = document.getElementById('eliminar');
+    var eliminar = document.getElementById('eliminar2');
+    var eliId = document.getElementById('eliId')
     var activadoVacio = false;
     var activadoListas = true;
+    console.log(eliminar)
 
     function estadoCarrito() {
         let a
@@ -14,22 +17,27 @@ window.addEventListener('load', function() {
 
     if (estadoCarrito() == false && activadoListas == true) {
         var total = 0
-        productos.forEach(producto => {
+        productos.forEach((producto, i) => {
             const div = document.createElement('div');
             div.classList.add('nacho_subproducto');
-            div.innerHTML += `<div class="nacho_izquierda">
+            div.innerHTML += 
+                        `<div class="nacho_izquierda">
                                 <img class="nacho_foto" src="imag/${producto.foto}">
-                                <div class="nacho_detalle">
+                            <div class="nacho_detalle">
                                 <h4>${producto.nombre}</h4>
                                 <p> ${producto.descripcion}</p>
-                                </div>
                             </div>
-                            <div class="nacho_derecha">
-                                
-                                <div> Cantidad : ${producto.cantidad}</div>
-                                <div> Precio : ${producto.precio}</div>
-                                <div><b>Subtotal</b> $${producto.precio * producto.cantidad}</div>
-                            </div>`
+                        </div>
+                        <div class="nacho_derecha">
+                            
+                            <div> Cantidad : ${producto.cantidad}</div>
+                            <div> Precio : ${producto.precio}</div>
+                            <div><b>Subtotal</b> $${producto.precio * producto.cantidad}</div>
+                            <button id="eliminar${i}"  type="submit" > Eliminar</button >
+                        </div>
+        <span id='eliId' class="invisible">
+            ${i}
+        </span>`
             contenedorProductos.appendChild(div);
             total = total + producto.precio * producto.cantidad
         });
@@ -50,6 +58,7 @@ window.addEventListener('load', function() {
     }
 
     eliminar.addEventListener('click', (e) => {
+        console.log("Vamos BOkEEEEE")
         if (productos.length != 0) {
             if (estadoCarrito() == false) {
                 activadoListas = false
@@ -59,22 +68,26 @@ window.addEventListener('load', function() {
                 contenedorTotal.innerHTML = ''
                 if (productos.length != 0) {
                     var total = 0
-                    productos.forEach(producto => {
+                    productos.forEach((producto,i) => {
                         const div1 = document.createElement('div');
                         div1.classList.add('nacho_subproducto');
                         div1.innerHTML = `<div class="nacho_izquierda">
                                                 <img class="nacho_foto" src="imag/${producto.foto}">
-                                                <div class="nacho_detalle">
+                                            <div class="nacho_detalle">
                                                 <h4>${producto.nombre}</h4>
                                                 <p> ${producto.descripcion}</p>
-                                                </div>
                                             </div>
-                                            <div class="nacho_derecha">
-                                                
-                                                <div> Cantidad : ${producto.cantidad}</div>
-                                                <div> Precio : ${producto.precio}</div>
-                                                <div><b>Subtotal</b> $${producto.precio * producto.cantidad}</div>
-                                            </div>`
+                                        </div>
+                                        <div class="nacho_derecha">
+                    
+                                        <div> Cantidad : ${producto.cantidad}</div>
+                                        <div> Precio : ${producto.precio}</div>
+                                        <div><b>Subtotal</b> $${producto.precio * producto.cantidad}</div>
+                                        <button id="eliminar2"  type="submit" value="Eliminar"> Eliminar</button>
+                                        </div>
+                                        <span id='eliId${i}' class="invisible">
+                                            ${i}
+                                        </span>`
                         contenedorProductos.appendChild(div1);
                         total = total + producto.precio * producto.cantidad
 

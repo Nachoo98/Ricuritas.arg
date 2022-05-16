@@ -47,10 +47,12 @@ window.addEventListener('load', function() {
             let carrito = JSON.parse(localStorage.getItem('carrito'))
             carrito.push(producto)
             localStorage.setItem('carrito', JSON.stringify(carrito))
+            alert("agregado")
         } else {
             let carrito = [];
             carrito.push(producto)
             localStorage.setItem('carrito', JSON.stringify(carrito))
+            alert("agregado")
         }
 
 
@@ -62,6 +64,7 @@ window.addEventListener('load', function() {
             let carrito = JSON.parse(localStorage.getItem('carrito'))
             let eliminado = carrito.pop()
             localStorage.setItem('carrito', JSON.stringify(carrito))
+            alert("eliminado")
         }
     })
 
