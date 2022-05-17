@@ -453,6 +453,15 @@ li {
     text-decoration: none;
 }
 
+#eliminar{
+    background-color: rgb(228, 166, 50);
+    color: #595959;
+    width: 10%;
+    border-radius: 5px;
+    border: rgb(190, 190, 166);
+    padding: 10px;
+}
+
 .botonlogin2 {
     display: none;
 }
@@ -822,4 +831,35 @@ display: none;
     display: flex;
     width: 100%;
     text-align-last: right;
+}
+
+#paraLlevar_div{
+    text-align: center;
+    margin: 2%;
+}
+
+#paraLlevar{
+    width:500px;
+     height:auto;
+}
+
+#texto_nosotros{
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+    position: absolute;
+    bottom:40%;
+    z-index: 1;
+}
+
+#pabellon_venezolano{
+    position:relative;
+  z-index: -1;
+}
+.pabellon_clase{
+    opacity: 70%;
+}
+#pabellon_venezolano img{
+   width: 100%;
+   height: auto;;
 }

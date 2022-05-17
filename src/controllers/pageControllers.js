@@ -4,6 +4,12 @@ const pageControllers={
     },
     carrito:(req,res)=>{
         res.render('carrito');
+    },
+    nosotros:(req,res)=>{
+        res.render('nosotros');
+    },
+    paraLlevar:(req,res)=>{
+        res.render('paraLlevar');
     }
 }
 
