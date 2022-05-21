@@ -1,6 +1,17 @@
+### Retrospectiva (Sprint 8)
+
+-Se realiza una primer llamada para comenzar con el Sprint 8. Terminamos la API en esta primer llamada.
+
+-Actualizamos el tablero de Trello.
+
+
 ### Retrospectiva (Sprint 7)
 
 -Utilizamos el tiempo de la parte práctica para comenzar con el Sprint 7.
+
+-Se utilizó la parte práctica de 3 clases para continuar con el sprint todos juntos.
+
+-Se realizaron 2 llamadas para finalizar con el Sprint 7.
 
 
 ### Retrospectiva (Sprint 6)

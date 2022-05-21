@@ -10,6 +10,10 @@ const express=require('express');
 const path=require('path');
 const app=express();
 
+const apiUsersRouter=require('./src/routes/api/users');
+const apiProductsRouter=require('./src/routes/api/productos');
+
+
 //middlewares
 const publicPath=path.resolve(__dirname,'./public');
 app.use(express.static(publicPath))
@@ -31,7 +35,9 @@ app.use('/usuarios', usersRoutes);
 
 app.use('/productos', productosRoutes);
 
+app.use('/api/users',apiUsersRouter);
 
+app.use('/api/products',apiProductsRouter);
 
 app.set('view engine', 'ejs')
 
