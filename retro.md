@@ -1,5 +1,7 @@
 ### Retrospectiva (Sprint 8)
 
+-Realizamos una segunda llamada donde terminamos con la consigna de React (falta mejorar estetica y categoría).
+
 -Se realiza una primer llamada para comenzar con el Sprint 8. Terminamos la API en esta primer llamada.
 
 -Actualizamos el tablero de Trello.

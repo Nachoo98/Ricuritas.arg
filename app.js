@@ -5,10 +5,12 @@ const productosRoutes=require('./src/routes/productosRoutes')
 const session=require('express-session')
 const cookies = require('cookie-parser');
 const methodOverride = require('method-override');
+const cors = require('cors');
 
 const express=require('express');
 const path=require('path');
 const app=express();
+app.use(cors());
 
 const apiUsersRouter=require('./src/routes/api/users');
 const apiProductsRouter=require('./src/routes/api/productos');
