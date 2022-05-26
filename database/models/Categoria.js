@@ -16,7 +16,7 @@
 
         categoria.associate = function (models){ 
 
-            categoria.belongsTo(models.Producto, {   
+            categoria.hasMany(models.Producto, {   
                 as: "Producto",
                 foreignKey: "categoria_FK"
                  });

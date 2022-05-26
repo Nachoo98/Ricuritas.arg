@@ -22,7 +22,7 @@ let config = {
 
     producto.associate = function (models){
 
-        producto.hasMany(models.Categoria, {   
+        producto.belongsTo(models.Categoria, {   
             as: "Producto",
             foreignKey: "categoria_FK"
              });
