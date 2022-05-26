@@ -3,7 +3,7 @@
 }
 
 header {
-    background-color: #595959;
+    background-color: black;
     padding-bottom: 1%;
     color: black
 }
@@ -11,12 +11,12 @@ header {
 body {
     font-family: 'Dongle', sans-serif;
     font-weight: 300;
-    background-color: #dedede;
+    background-color: #fff;
     margin: 0px;
 }
 
 .nav_carrito {
-    border: solid 1px #595959;
+    border: solid 1px black;
     margin-top: 0%;
 }
 
@@ -65,7 +65,7 @@ a .logo {
     color: white;
     border-radius: 3px;
     padding: 10px;
-    border: solid 1px #595959;
+    border: solid 1px black;
     transition: all 0.1s;
 }
 
@@ -74,7 +74,7 @@ a .logo {
     color: white;
     border-radius: 3px;
     padding: 10px;
-    border: solid 1px #595959;
+    border: solid 1px black;
     transition: all 0.1s;
 }
 
@@ -402,15 +402,14 @@ li {
 }
 
 .mainlogin2 {
-    background-color: rgb(228, 222, 222);
+    background-color: #fff;
     margin-bottom: 2%;
     margin-top: 2%;
 }
 
 .mainlogin {
     text-align: center;
-    background-color: beige;
-    padding-top: 25px;
+    background-color: #ffe57b;
     padding-bottom: 25px;
     display: flex;
     flex-direction: column;
@@ -427,8 +426,8 @@ li {
 }
 
 .eyeboton {
-    background-color: beige;
-    border-color: beige;
+    background-color: #ffe57b;
+    border-color: #ffe57b;
     padding: 10px;
     position: absolute;
 }
@@ -467,10 +466,10 @@ li {
 }
 
 .footerlogin {
-    background-color: #595959;
+    background-color: black;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #dedede;
+    color: black;
 }
 
 .footerlogin2 {
@@ -488,7 +487,7 @@ li {
 
 .navfooter a {
     text-decoration: none;
-    color: #dedede;
+    color: #fff;
     margin-left: 5%;
 }
 
@@ -525,6 +524,13 @@ li {
     font-size: 150%;
     align-items: center;
 }
+.iconos div {
+    color: #fff;
+}
+.iconos div a{
+    color: #fff;
+}
+
 
 .detalleListado p {
     font-size: 12px;
@@ -542,9 +548,7 @@ li {
     .mainlogin {
         margin: auto;
     }
-    .footerlogin {
-        border-top: 1px solid rgb(212, 209, 209);
-    }
+ 
 }
 
 
@@ -678,7 +682,7 @@ display: none;
 
 .contenedor {
     padding-bottom: 3%;
-    border-bottom: solid 2px #595959;
+    border-bottom: solid 2px #fff;
     height: 20%;
 }
 
@@ -711,7 +715,7 @@ display: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: beige;
+    background-color: #fff;
     align-items: center;
 }
 
