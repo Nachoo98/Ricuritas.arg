@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
     const contenedorProductos = document.getElementById('nacho_productos');
     const contenedorTotal = document.getElementById('contenedorDeTotal');
     var productos = JSON.parse(localStorage.getItem('carrito'));
-    var eliminar = document.getElementById('eliminar2');
+    var eliminar = document.getElementById('eliminar');
     var eliId = document.getElementById('eliId')
     var activadoVacio = false;
     var activadoListas = true;
