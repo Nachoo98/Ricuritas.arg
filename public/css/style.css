@@ -726,12 +726,17 @@ display: none;
 }
 
 .contenedorfotos {
+    text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: baseline;
 }
-
+.contenedorfotos h3{
+    width: 100%;
+    text-align: center;
+    font-weight: bold; 
+}
 .contenedor2 {
     display: flex;
     flex-direction: row;
@@ -902,3 +907,78 @@ width: 100%;
     width: 100%;
     height: auto;
 }
+
+.Nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Nosotros div{
+width: 100%;
+} 
+
+.banner_nosotros{
+    width: 100%;
+    height: auto;
+}
+
+.contenedorVideo{
+    text-align: center;
+    margin-bottom:3%;
+}
+.contenedorVideo h3{
+    font-style: oblique;
+    font-weight: bold; 
+}
+
+.contenedorDescuento{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: row;
+}
+.contenedorFotosDescuento{
+    width: 50%;
+}
+
+.contenedorFotosDescuento img{
+    width: 100%;
+    height: auto;
+}
+.contenedorCumpleanios{
+width: 50%;
+margin-top: 10%;
+}
+.contenedorCumpleanios h3{
+font-style: oblique;   
+font-weight: bold; 
+}
+
+
+.contenedorNetflix{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+.contenedorTextoNetflix{
+        width: 50%;
+        margin-top: 5%;
+      
+ }
+.contenedorTextoNetflix h3{
+        font-style: oblique;    
+        font-weight: bold; 
+ }
+ 
+.contenedorFotoNetflix{
+        width: 25%;
+}
+    
+.contenedorFotoNetflix img{
+        width: 100%;
+        height: auto;
+     }
+ 
