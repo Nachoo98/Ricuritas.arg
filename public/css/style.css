@@ -888,3 +888,17 @@ display: none;
    width: 100%;
    height: auto;;
 }
+.Nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Nosotros div{
+width: 100%;
+} 
+
+.banner_nosotros{
+    width: 100%;
+    height: auto;
+}
