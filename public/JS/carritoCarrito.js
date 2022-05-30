@@ -33,7 +33,7 @@ window.addEventListener('load', function() {
                             <div> Cantidad : ${producto.cantidad}</div>
                             <div> Precio : ${producto.precio}</div>
                             <div><b>Subtotal</b> $${producto.precio * producto.cantidad}</div>
-                            <button id="eliminar${i}"  type="submit" > Eliminar</button >
+                            <button id="eliminar${i}"  type="submit" value="Eliminar" > Eliminar</button >
                         </div>
         <span id='eliId' class="invisible">
             ${i}
