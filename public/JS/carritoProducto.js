@@ -22,9 +22,7 @@ window.addEventListener('load', function() {
     var nombreProducto = document.getElementById("nombreProducto");
     var precio = document.getElementById("precio");
     var cantidad = document.getElementById("cantidad");
-    var añadirCarrito = document.getElementById("añadirCarrito");
     var foto = document.getElementById('imagens');
-    var eliminar = document.getElementById('eliminar');
     var descripcion = document.getElementById('descripcion');
 
 
@@ -37,12 +35,11 @@ window.addEventListener('load', function() {
             "id": id.innerText.trim(),
             "nombre": nombreProducto.innerText,
             "precio": parseInt(precio.innerText.slice(1)),
-            "cantidad": parseInt(cantidad.value),
             "foto": foto.innerText.trim(),
             "descripcion": descripcion.innerText,
         }
-
-
+        if(parseInt(cantidad.value)!=null && parseInt(cantidad.value)>0 && parseInt(cantidad.value)<=12 ){
+            producto.cantidad = parseInt(cantidad.value)
         if (estadoCarrito() == false) {
             let carrito = JSON.parse(localStorage.getItem('carrito'))
             carrito.push(producto)
@@ -55,56 +52,13 @@ window.addEventListener('load', function() {
             alert("agregado")
         }
 
-
+    } else {
+        alert('Debes ingresar un numero entre 1 y 12')
+    }
 
     })
 
-    eliminar.addEventListener('click', (e) => {
-        if (estadoCarrito() == false) {
-            let carrito = JSON.parse(localStorage.getItem('carrito'))
-            let eliminado = carrito.pop()
-            localStorage.setItem('carrito', JSON.stringify(carrito))
-            alert("eliminado")
-        }
-    })
-
-    function cantidad() {
-        let carrito = JSON.parse(localStorage.getItem('carrito'))
-        var total = 1
-        for (let i = 0; i < carrito.length; i++) {
-            total = carrito[i].cantidad + total
-        }
-        return total
-    }
-
-
-
-    function totalCarrito() {
-        let carrito = JSON.parse(localStorage.getItem('carrito'))
-        var total = 0
-        for (let i = 0; i < carrito.length; i++) {
-            total = carrito[i].precio + total
-        }
-        return total
-    }
-    console.log(totalCarrito())
-
-    function cantidad() {
-        let carrito = JSON.parse(localStorage.getItem('carrito'))
-        return carrito.length
-    }
-
-
-    console.log(cantidad())
-
-    function productosPorId() {
-        let carrito = JSON.parse(localStorage.getItem('carrito'))
-
-        for (let i = 0; i < carrito.length; i++) {
-            console.log(carrito[i].id)
-        }
-    }
-    productosPorId()
+   
 
 
 })
