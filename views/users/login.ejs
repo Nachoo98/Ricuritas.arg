@@ -15,14 +15,14 @@
             <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@"><br><br><br>
             <div>
              <% if(locals.errors && errors.nombreUsuario) {%>
-                    <span><%= errors.nombreUsuario.msg%> </span>
+                <p style="color:red">*<%= errors.nombreUsuario.msg%>*</p> 
             <% }%>
             </div>
             <input type="password" name="contrasenia" placeholder="Contraseña"> 
             <span class="eyeboton" ><i class="far fa-eye-slash"></i></span> <br><br><br>
             <div>
                 <% if(locals.errors && errors.contrasenia) {%>
-                       <span><%= errors.contrasenia.msg%> </span>
+                    <p style="color:red">*<%= errors.contrasenia.msg%>*</p> 
                <% }%>
                </div>
             <input id="botonlogin" class="submit-form" type="submit" value="Iniciar sesión"><br><br><br>

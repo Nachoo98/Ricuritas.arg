@@ -15,51 +15,51 @@
             <input type="text" name="nombre" placeholder="Nombre" value="<%= locals.old ? old.nombre: null %>"><br><br><br>
               <% if (locals.errors && errors.nombre) { %>  
                 <div>
-                    <%= errors.nombre.msg %> 
+                    <p style="color:red">*<%= errors.nombre.msg %>*</p> 
                 </div>
             <%  } %>  
             <input type="text" name="apellido" placeholder="Apellido" value="<%= locals.old ? old.apellido : null %>"><br><br><br>
             <%if (locals.errors && errors.apellido) { %>
                 <div>
-                    <%= errors.apellido.msg %> 
+                    <p style="color:red">*<%= errors.apellido.msg %>*</p>  
                 </div>
             <% } %> 
             <input type="email" id="email" name="mail" placeholder="Email" value="<%= locals.old ? old.mail : null %>"><br><br><br>
            <% if (locals.errors && errors.mail) { %>
                 <div>
-                    <%= errors.mail.msg %> 
+                    <p style="color:red">*<%= errors.mail.msg %>*</p>  
                 </div>
             <% } %> 
             <input type="text" name="nombreUsuario" placeholder="Nombre de usuari@" value="<%= locals.old ? old.nombreUsuario : null %>"><br><br><br>
            <% if (locals.errors && errors.nombreUsuario) { %>
                 <div>
-                    <%= errors.nombreUsuario.msg %> 
+                    <p style="color:red">*<%= errors.nombreUsuario.msg %>*</p>  
                 </div>
             <% } %> 
             <input type="password" name="contrasenia" placeholder="Contraseña">
             <span class="eyeboton" ><i class="far fa-eye-slash"></i></span> <br><br><br>
            <% if (locals.errors && errors.contrasenia) { %>
                 <div>
-                    <%= errors.contrasenia.msg %> 
+                    <p style="color:red">*<%= errors.contrasenia.msg %>*</p>  
                 </div>
             <% } %> 
             <input type="password" placeholder="Confirmar contraseña">
             <span class="eyeboton" ><i class="far fa-eye-slash"></i></span> <br><br><br>
            <% if (locals.errors && errors.contrasenia) { %>
                 <div>
-                    <%= errors.contrasenia.msg %> 
+                    <p style="color:red">*<%= errors.contrasenia.msg %>*</p>  
                 </div>
             <% } %> 
             <input type="tel" name="telefono" placeholder="Nro. Teléfono" value="<%= locals.old ? old.telefono : null %>"><br><br><br>
              <% if (locals.errors && errors.telefono) { %>
                 <div>
-                    <%= errors.telefono.msg %> 
+                    <p style="color:red">*<%= errors.telefono.msg %>*</p>  
                 </div>
             <% } %>
             <input type="text" name="direccion" placeholder="Dirección" value="<%= locals.old ? old.direccion : null %>"><br><br>
              <% if (locals.errors && errors.direccion) { %>
                 <div>
-                    <%= errors.direccion.msg %> 
+                    <p style="color:red">*<%= errors.direccion.msg %>*</p>  
                 </div>
             <% } %> 
             <div class="subirImagen">
@@ -70,13 +70,13 @@
             </div><br>
            <% if (locals.errors && errors.imagen) { %>
                 <div>
-                     <%= errors.imagen.msg %> 
+                    <p style="color:red">*<%= errors.imagen.msg %>*</p>  
                  </div>
              <% } %> 
             <input type="text" name="notas" placeholder="Notas" value="<%= locals.old ? old.notas : null %>"><br><br><br>
            <% if (locals.errors && errors.notas) { %>
                 <div>
-                     <%= errors.notas.msg %> 
+                    <p style="color:red">*<%= errors.notas.msg %>*</p>  
                  </div>
              <% } %> 
             <input id="botonlogin" class="submit-form" type="submit" value="Registrarse"><br><br>
