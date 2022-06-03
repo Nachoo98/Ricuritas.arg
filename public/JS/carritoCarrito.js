@@ -2,6 +2,8 @@ window.addEventListener('load', function() {
     const contenedorProductos = document.getElementById('nacho_productos');
     const contenedorTotal = document.getElementById('contenedorDeTotal');
     var productos = JSON.parse(localStorage.getItem('carrito'));
+    var prueba = false
+    
 
 function existeCarrito() {
         let a = 'no'
@@ -17,12 +19,12 @@ function renderizar(){
     if(existeCarrito()==='no'){
         const div = document.createElement('div');
         div.classList.add('nacho_subproducto');
-        div.innerHTML += `<br><br><br><br><br><br><br><br><br><br><div> <p>El carrito esta vacio</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>`
+        div.innerHTML += `<br><br><br><br><br><br><br><br><br><br><div> <p>El carrito esta vacio</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>`
         contenedorProductos.appendChild(div);
     } else if (existeCarrito()==='si' && productos.length === 0){
         const div = document.createElement('div');
         div.classList.add('nacho_subproducto');
-        div.innerHTML += `<br><br><br><br><br><br><br><br><br><br><div> <p>El carrito esta vacio</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>`
+        div.innerHTML += `<br><br><br><br><br><br><br><br><br><br><div> <p>El carrito esta vacio</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>`
         contenedorProductos.appendChild(div);
     } else {
         var total = 0
@@ -69,4 +71,52 @@ function botonEliminar(id){
 
 renderizar()
 
+
+var confirmarCompra = document.getElementById("confirmarCompra")
+    confirmarCompra.addEventListener('click' ,(d)=>{
+        d.preventDefault()
+        if(existeCarrito()==='si' && productos.length === 0){
+            swal("El carrito esta vacio","","error")
+        }else if(existeCarrito()==='no'){swal("El carrito esta vacio","","error")}else{
+            swal("¿Desea confirmar el pedido?", {
+                buttons: {
+                  cancel: "Cancelar",
+                  catch: {
+                    text: "Confirmar",
+                    value: "catch",
+                  },
+                },
+              })
+              .then((value) => {
+                switch (value) {
+               
+                  case "catch":
+                    swal("Muchas gracias!","Pronto confirmaremos su pedido" , "success",{
+                        buttons:{
+                            ok : {text: "Confirmar",
+                            a: "ok",
+                        }
+                    }}).then((a)=>{
+                        switch(a){
+                            case "ok":
+                                localStorage.removeItem('carrito')
+                                window.location.href = 'home'
+                                break;
+                            
+                            default:
+                                localStorage.removeItem('carrito')
+                                window.location.href = 'home'
+                        }
+                    });
+                    break;
+               
+                  default:
+                    swal("Puedes seguir comprando");
+                }
+              });
+        }       
+    })
+
+    
+ 
 })

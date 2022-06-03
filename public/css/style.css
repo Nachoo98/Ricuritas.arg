@@ -15,6 +15,7 @@ body {
     margin: 0px;
 }
 
+
 .nav_carrito {
     border: solid 1px black;
     margin-top: 0%;
@@ -280,10 +281,12 @@ li {
 }
 
 #caja2 form input {
-    width: 50%;
+    width: 58%;
     border-radius: 5px;
-    border: rgb(190, 190, 166);
     padding: 10px;
+}
+#cantidad{
+    border-color:black
 }
 
 .seleccion {
@@ -461,7 +464,7 @@ li {
     text-decoration: none;
 }
 #seguirComprando{
-    width:47%;
+    width:55%;
 }
 .caja3{
     width:100%;
@@ -602,9 +605,7 @@ li {
 /* ----------------------------------------------------------------------------------------------- */
 
 @media(min-width:480px) {
-    .cajaMadre {
-        flex-direction: row;
-    }
+   
     #caja1>ul.slider li img {
         object-fit: contain;
     }
@@ -646,6 +647,9 @@ li {
     .detalleListado p {
         font-size: 20px;
     }
+    .cajaMadre {
+        flex-direction: row;
+    }
 }
 
 @media (min-width:980px) {
@@ -675,6 +679,7 @@ li {
     .menuDesplegable1 {
         display: none;
     }
+  
 }
 
 
@@ -870,6 +875,7 @@ li {
 .registrado {
     text-align: center;
     font-weight: bold;
+    height: 55vh;
 }
 
 .invisible {

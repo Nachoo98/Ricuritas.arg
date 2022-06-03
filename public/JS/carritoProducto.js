@@ -1,5 +1,3 @@
-/*import Carrito from './carritoModelo.js'*/
-
 window.addEventListener('load', function() {
     function estadoCarrito() {
         let a
@@ -44,16 +42,16 @@ window.addEventListener('load', function() {
             let carrito = JSON.parse(localStorage.getItem('carrito'))
             carrito.push(producto)
             localStorage.setItem('carrito', JSON.stringify(carrito))
-            alert("agregado")
+            swal(`${producto.nombre} agregados`, "", "success")
         } else {
             let carrito = [];
             carrito.push(producto)
             localStorage.setItem('carrito', JSON.stringify(carrito))
-            alert("agregado")
+            swal(`${producto.nombre} agregados`, "", "success")
         }
 
     } else {
-        alert('Debes ingresar un numero entre 1 y 12')
+        swal("Debes ingresar un numero entre 1 y 12", "", "error")
     }
 
     })
