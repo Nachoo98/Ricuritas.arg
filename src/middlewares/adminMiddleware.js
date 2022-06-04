@@ -5,7 +5,9 @@ function adminMiddleware(req, res, next) {
 		}else{
 			return res.send('Permisos Invalidos');
 	}
-	}
+	}else{
+		return res.send('Permisos Invalidos');
+}
 	
 }
 
