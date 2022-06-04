@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include('../partials/head')%>
+<body>
+  <%-include('../partials/header')%>
+
+    <main>
+
+        <div>
+            <h1>¿Que producto desea editar?</h1>
+          <ul  >
+            <% for(let p of productos) {%>
+                   <a href="../productos/editar/<%=p.id%>" class="linkListado"> <li class="contenedorListado" >
+                                   <img class="fotoListado" src="/imag/<%= p.imagen%>">
+                                   <div class="detalleListado">
+                                    <h4><%= p.nombreProducto%></h4>
+                                    <p><%= p.descripcion%></p>
+                                    <p>$ <%= p.precio%></p>
+                                  </div>
+                      </li>
+                    </a>
+             <% }%>
+          </ul>
+
+ 
+
+    </main>
+
+  <%-include('../partials/footer')%>
+</body>
+</html>

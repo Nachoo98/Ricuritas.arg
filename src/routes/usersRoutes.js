@@ -32,7 +32,7 @@ router.post('/registrado',uploadFile.single('imagen'), validations, usersControl
 router.get('/login',guestMiddleware, usersControllers.login)
 router.post('/logins',autenticacion,usersControllers.logeando)
 router.get('/perfil',usersControllers.perfil)
-
+router.get('/perfilAdmin',usersControllers.perfilAdmin)
 router.get('/logout', usersControllers.logout)
 
 router.get('/check',usersControllers.check)

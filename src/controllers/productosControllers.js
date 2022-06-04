@@ -12,6 +12,14 @@ const productosControllers={
         })
 
     },
+
+    indexEditar:(req,res)=>{
+
+        db.Producto.findAll().then((productos)=>{
+            res.render('products/listado-productos-editar',{productos:productos});
+        })
+
+    },
     crear:(req,res)=>{
         res.render('products/creacion_producto');
     },

@@ -3,7 +3,7 @@ const productosControllers=require('../controllers/productosControllers');
 
 const express=require('express');
 const router=express.Router();
-
+const adminMiddleware = require('../middlewares/adminMiddleware');
 //agregue para usar el multer------------------------------
 const multer=require('multer');
 const path=require('path');
@@ -23,10 +23,11 @@ const uploadFile = multer({ storage: multerDiskStorage });
 //--------------------------------------------------------
 
 router.get('/', productosControllers.index)
-router.get('/crear', productosControllers.crear)
+router.get('/listadoEditar', adminMiddleware,productosControllers.indexEditar)
+router.get('/crear', adminMiddleware, productosControllers.crear)
 router.post('/creado',uploadFile.single('imagenProducto'),productosControllers.creado)
 router.get('/detail/:id', productosControllers.detail)
-router.get('/editar/:id', productosControllers.editar)
+router.get('/editar/:id', adminMiddleware,productosControllers.editar)
 router.put('/editar/:id', productosControllers.editado)
 router.delete('/editar/:id', productosControllers.destroy)
 router.get('/test',productosControllers.test)

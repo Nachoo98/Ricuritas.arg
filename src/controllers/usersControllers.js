@@ -109,7 +109,12 @@ const usersControllers={
 				if (isOkThePassword) {
 					delete userToLogin.dataValues.contrasenia;
 					req.session.userLogged = userToLogin.dataValues;
-					return res.redirect('/usuarios/perfil');
+					if(req.session.userLogged.nombreUsuario==='TheComedian'){
+						return res.redirect('/usuarios/perfilAdmin')
+					}else{
+						return res.redirect('/usuarios/perfil');
+				}
+					
 				}
 				else{
 					res.render('users/login', {
@@ -126,9 +131,14 @@ const usersControllers={
 	},
 
 	perfil:(req,res)=>{
-
+		console.log(req.session.userLogged.nombreUsuario)
 		res.render('users/perfil',{user:req.session.userLogged});
 	},
+
+	perfilAdmin:(req,res)=>{
+		res.render('users/perfilAdmin',{user:req.session.userLogged})
+	},
+
 	logout:(req,res)=>{
 
 		req.session.destroy();
